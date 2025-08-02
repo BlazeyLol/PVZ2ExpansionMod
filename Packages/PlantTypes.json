@@ -1,0 +1,5247 @@
+{
+	"#comment": "Make new plant types here!",
+	"version": 1,
+	"objects": [
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sunflower"
+			],
+			"objdata": {
+				"TypeName": "sunflower",
+				"PlantFramework": "PlantSunflower",
+				"PlantResourceGroups": [
+					"PlantSunflower"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSunflower"
+				],
+				"Properties": "RTID(SunflowerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Sunflower",
+				"PopAnim": "POPANIM_PLANT_SUNFLOWER",
+				"SeedChooserBigVerticalOffset": 0.320000,
+				"ShadowScale": 0.900000,
+				"HomeWorld": "tutorial",
+				"AlmanacBackdropName": "modern",
+				"IntegerID": 1,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"peashooter"
+			],
+			"objdata": {
+				"TypeName": "peashooter",
+				"PlantFramework": "PlantPeashooter",
+				"PlantResourceGroups": [
+					"PlantPeashooter",
+					"PlantPeashooterAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPeashooter"
+				],
+				"Properties": "RTID(PeashooterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_PEASHOOTER",
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 2
+				},
+				"HomeWorld": "tutorial",
+				"AlmanacBackdropName": "modern",
+				"Families": [
+					"Appeasemint"
+				],
+				"IntegerID": 2,
+				"MasteryType": "piercing"
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"wallnut"
+			],
+			"objdata": {
+				"TypeName": "wallnut",
+				"PlantFramework": "PlantWallnut",
+				"PlantResourceGroups": [
+					"PlantWallnut",
+					"PlantWallnutAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantWallnut"
+				],
+				"Properties": "RTID(WallnutDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Wallnut",
+				"PopAnim": "POPANIM_PLANT_WALLNUT",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "tutorial",
+				"AlmanacBackdropName": "modern",
+				"Families": [
+					"Reinforcemint"
+				],
+				"IntegerID": 3,
+				"MasteryType": "health"
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"potatomine"
+			],
+			"objdata": {
+				"TypeName": "potatomine",
+				"PlantFramework": "PlantPotatomine",
+				"PlantResourceGroups": [
+					"PlantPotatomine",
+					"PlantPotatomineAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPotatomine"
+				],
+				"Properties": "RTID(PotatomineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_PotatoMine",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"PopAnim": "POPANIM_PLANT_POTATOMINE",
+				"HomeWorld": "tutorial",
+				"AlmanacBackdropName": "modern",
+				"IntegerID": 13,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"bloomerang"
+			],
+			"objdata": {
+				"TypeName": "bloomerang",
+				"PlantFramework": "PlantBloomerang",
+				"PlantResourceGroups": [
+					"PlantBloomerang",
+					"PlantBloomerangAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBloomerang"
+				],
+				"Properties": "RTID(BloomerangDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_BLOOMERANG",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "egypt",
+				"IntegerID": 27,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"cabbagepult"
+			],
+			"objdata": {
+				"TypeName": "cabbagepult",
+				"PlantFramework": "PlantCabbagepult",
+				"PlantResourceGroups": [
+					"PlantCabbagepult",
+					"PlantCabbagepultAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantCabbagepult"
+				],
+				"Properties": "RTID(CabbagepultDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_CABBAGEPULT",
+				"SeedChooserBigVerticalOffset": 0.460000,
+				"SeedChooserBigScale": 1.200000,
+				"HomeWorld": "tutorial",
+				"AlmanacBackdropName": "modern",
+				"IntegerID": 6,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"iceburg"
+			],
+			"objdata": {
+				"TypeName": "iceburg",
+				"PlantFramework": "PlantIceburg",
+				"PlantResourceGroups": [
+					"PlantIceburg",
+					"PlantIceburgAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantIceburg"
+				],
+				"Properties": "RTID(IceburgDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_ICEBURG",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"ShadowScale": 0.700000,
+				"HomeWorld": "egypt",
+				"IntegerID": 11,
+				"Families": [
+					"Wintermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeGraveBuster",
+			"aliases": [
+				"gravebuster"
+			],
+			"objdata": {
+				"TypeName": "gravebuster",
+				"PlantFramework": "PlantGraveBuster",
+				"PlantResourceGroups": [
+					"PlantGraveBuster",
+					"PlantGraveBusterAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGraveBuster"
+				],
+				"Properties": "RTID(GraveBusterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_GraveBuster",
+				"PopAnim": "POPANIM_PLANT_GRAVEBUSTER",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "egypt",
+				"IntegerID": 10,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"twinsunflower"
+			],
+			"objdata": {
+				"TypeName": "twinsunflower",
+				"PlantFramework": "PlantTwinSunflower",
+				"PlantResourceGroups": [
+					"PlantTwinSunflower"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantTwinSunflower"
+				],
+				"Properties": "RTID(TwinSunflowerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Sunflower",
+				"PopAnim": "POPANIM_PLANT_SUNFLOWER_TWIN",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"ShadowScale": 0.900000,
+				"HomeWorld": "egypt",
+				"IntegerID": 35,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"bonkchoy"
+			],
+			"objdata": {
+				"TypeName": "bonkchoy",
+				"PlantFramework": "PlantBonkchoy",
+				"PlantResourceGroups": [
+					"PlantBonkchoy",
+					"PlantBonkchoyAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBonkchoy"
+				],
+				"Properties": "RTID(BonkchoyDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Bonkchoy",
+				"PopAnim": "POPANIM_PLANT_BONKCHOY",
+				"HomeWorld": "egypt",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.300000,
+				"IntegerID": 5,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"repeater"
+			],
+			"objdata": {
+				"TypeName": "repeater",
+				"PlantFramework": "PlantRepeater",
+				"PlantResourceGroups": [
+					"PlantRepeater",
+					"PlantRepeaterAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantRepeater"
+				],
+				"Properties": "RTID(RepeaterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_REPEATER",
+				"HomeWorld": "egypt",
+				"IntegerID": 14,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"snowpea"
+			],
+			"objdata": {
+				"TypeName": "snowpea",
+				"PlantFramework": "PlantSnowPea",
+				"PlantResourceGroups": [
+					"PlantSnowPea",
+					"PlantSnowPeaAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSnowPea"
+				],
+				"Properties": "RTID(SnowPeaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SNOWPEA",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 2
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 21,
+				"Families": [
+					"Wintermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"kernelpult"
+			],
+			"objdata": {
+				"TypeName": "kernelpult",
+				"PlantFramework": "PlantKernelpult",
+				"PlantResourceGroups": [
+					"PlantKernelpult",
+					"PlantKernelpultAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantKernelpult"
+				],
+				"Properties": "RTID(KernelpultDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Kernelpult",
+				"PopAnim": "POPANIM_PLANT_KERNALPULT",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigHorizontalOffset": -0.050000,
+				"SeedChooserBigScale": 1.300000,
+				"HomeWorld": "pirate",
+				"IntegerID": 19,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"snapdragon"
+			],
+			"objdata": {
+				"TypeName": "snapdragon",
+				"PlantFramework": "PlantSnapdragon",
+				"PlantResourceGroups": [
+					"PlantSnapdragon",
+					"PlantSnapdragonAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSnapdragon"
+				],
+				"Properties": "RTID(SnapdragonDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SNAPDRAGON",
+				"SeedChooserBigVerticalOffset": 0.480000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.250000,
+				"HomeWorld": "pirate",
+				"IntegerID": 15,
+				"Families": [
+					"Peppermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"powerlily"
+			],
+			"objdata": {
+				"TypeName": "powerlily",
+				"PlantFramework": "PlantPowerLily",
+				"PlantResourceGroups": [
+					"PlantPowerLily",
+					"PlantPowerLilyAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPowerLily"
+				],
+				"Properties": "RTID(PowerLilyDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_PowerLily",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"PopAnim": "POPANIM_PLANT_POWERLILY",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 38,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"spikeweed"
+			],
+			"objdata": {
+				"TypeName": "spikeweed",
+				"PlantFramework": "PlantSpikeweed",
+				"PlantResourceGroups": [
+					"PlantSpikeweed",
+					"PlantSpikeweedAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSpikeweed"
+				],
+				"Properties": "RTID(SpikeweedDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SPIKEWEED",
+				"SeedChooserBigVerticalOffset": 0.200000,
+				"HomeWorld": "pirate",
+				"HasStoreShadow": false,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 20
+				},
+				"IntegerID": 16,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"coconutcannon"
+			],
+			"objdata": {
+				"TypeName": "coconutcannon",
+				"PlantFramework": "PlantCoconutCannon",
+				"PlantResourceGroups": [
+					"PlantCoconutCannon",
+					"PlantCoconutCannonAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantCoconutCannon"
+				],
+				"Properties": "RTID(CoconutCannonDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_CoconutCannon",
+				"PopAnim": "POPANIM_PLANT_COCONUTCANNON",
+				"SeedChooserBigHorizontalOffset": -0.080000,
+				"SeedChooserBigVerticalOffset": 0.460000,
+				"SeedChooserBigScale": 1.200000,
+				"HomeWorld": "pirate",
+				"IntegerID": 9,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"cherry_bomb"
+			],
+			"objdata": {
+				"TypeName": "cherry_bomb",
+				"PlantFramework": "PlantCherryBomb",
+				"PlantResourceGroups": [
+					"PlantCherryBomb",
+					"PlantCherryBombAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantCherryBomb"
+				],
+				"Properties": "RTID(CherryBombDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_CHERRYBOMB",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "pirate",
+				"IntegerID": 8,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"springbean"
+			],
+			"objdata": {
+				"TypeName": "springbean",
+				"PlantFramework": "PlantSpringbean",
+				"PlantResourceGroups": [
+					"PlantSpringbean",
+					"PlantSpringbeanAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSpringbean"
+				],
+				"Properties": "RTID(SpringbeanDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Springbean",
+				"PopAnim": "POPANIM_PLANT_SPRINGBEAN",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigHorizontalOffset": -0.020000,
+				"ShadowScale": 0.600000,
+				"ShadowOffset": {
+					"x": -5,
+					"y": 5
+				},
+				"HomeWorld": "pirate",
+				"IntegerID": 20,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"spikerock"
+			],
+			"objdata": {
+				"TypeName": "spikerock",
+				"PlantFramework": "PlantSpikerock",
+				"PlantResourceGroups": [
+					"PlantSpikerock",
+					"PlantSpikerockAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSpikerock"
+				],
+				"Properties": "RTID(SpikerockDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Spikerock",
+				"PopAnim": "POPANIM_PLANT_SPIKEROCK",
+				"SeedChooserBigVerticalOffset": 0.150000,
+				"HomeWorld": "pirate",
+				"HasStoreShadow": false,
+				"IntegerID": 37,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"threepeater"
+			],
+			"objdata": {
+				"TypeName": "threepeater",
+				"PlantFramework": "PlantThreepeater",
+				"PlantResourceGroups": [
+					"PlantThreepeater",
+					"PlantThreepeaterAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantThreepeater"
+				],
+				"Properties": "RTID(ThreepeaterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_THREEPEATER",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "pirate",
+				"IntegerID": 17,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"squash"
+			],
+			"objdata": {
+				"TypeName": "squash",
+				"PlantFramework": "PlantSquash",
+				"PlantResourceGroups": [
+					"PlantSquash",
+					"PlantSquashAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSquash"
+				],
+				"Properties": "RTID(SquashDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigScale": 1.300000,
+				"PopAnim": "POPANIM_PLANT_SQUASH",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 39,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"splitpea"
+			],
+			"objdata": {
+				"TypeName": "splitpea",
+				"PlantFramework": "PlantSplitpea",
+				"PlantResourceGroups": [
+					"PlantSplitpea",
+					"PlantSplitpeaAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSplitpea"
+				],
+				"Properties": "RTID(SplitpeaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SPLITPEA",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "cowboy",
+				"IntegerID": 23,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"chilibean"
+			],
+			"objdata": {
+				"TypeName": "chilibean",
+				"PlantFramework": "PlantChilibean",
+				"PlantResourceGroups": [
+					"PlantChilibean",
+					"PlantChilibeanGas",
+					"PlantChilibeanAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantChilibean"
+				],
+				"Properties": "RTID(ChilibeanDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Chilibean",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"PopAnim": "POPANIM_PLANT_CHILIBEAN",
+				"HomeWorld": "cowboy",
+				"IntegerID": 22,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"torchwood"
+			],
+			"objdata": {
+				"TypeName": "torchwood",
+				"PlantFramework": "PlantTorchwood",
+				"PlantResourceGroups": [
+					"PlantTorchwood",
+					"FirePeaEffects",
+					"PeaEffects",
+					"PlantTorchwoodAudio",
+					"PlantPotatomineAudio",
+					"EffectsJalapeno"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantTorchwood"
+				],
+				"Properties": "RTID(TorchwoodDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Torchwood",
+				"PopAnim": "POPANIM_PLANT_TORCHWOOD",
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"SeedChooserBigHorizontalOffset": -0.040000,
+				"SeedChooserBigScale": 1.150000,
+				"SeasonsVerticalOffset": 30,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 18,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"lightningreed"
+			],
+			"objdata": {
+				"TypeName": "lightningreed",
+				"PlantFramework": "PlantLightningReed",
+				"PlantResourceGroups": [
+					"PlantLightningReed",
+					"PlantLightningReedHit",
+					"PlantLightningReedAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantLightningReed"
+				],
+				"Properties": "RTID(LightningReedDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_LIGHTNINGREED",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigHorizontalOffset": -0.100000,
+				"ShadowScale": 0.500000,
+				"HomeWorld": "cowboy",
+				"IntegerID": 24,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"tallnut"
+			],
+			"objdata": {
+				"TypeName": "tallnut",
+				"PlantFramework": "PlantTallnut",
+				"PlantResourceGroups": [
+					"PlantTallnut",
+					"PlantTallnutAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantTallnut"
+				],
+				"Properties": "RTID(TallnutDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Tallnut",
+				"PopAnim": "POPANIM_PLANT_TALLNUT",
+				"SeedChooserBigVerticalOffset": 0.560000,
+				"SeedChooserBigHorizontalOffset": -0.050000,
+				"SeedChooserBigScale": 1.100000,
+				"HomeWorld": "cowboy",
+				"IntegerID": 4,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"jalapeno"
+			],
+			"objdata": {
+				"TypeName": "jalapeno",
+				"PlantFramework": "PlantJalapeno",
+				"PlantResourceGroups": [
+					"PlantJalapeno",
+					"EffectsJalapeno",
+					"PlantJalapenoAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantJalapeno"
+				],
+				"Properties": "RTID(JalapenoDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_JALAPENO",
+				"SeedChooserBigVerticalOffset": 0.380000,
+				"SeedChooserBigScale": 1.300000,
+				"ShadowScale": 0.900000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 33,
+				"Families": [
+					"Peppermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypePeapod",
+			"aliases": [
+				"peapod"
+			],
+			"objdata": {
+				"TypeName": "peapod",
+				"PlantFramework": "PlantPeapod",
+				"PlantResourceGroups": [
+					"PlantPeapod",
+					"PlantPeapodAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPeapod"
+				],
+				"Properties": "RTID(PeapodDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Peapod",
+				"PopAnim": "POPANIM_PLANT_PEAPOD",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigHorizontalOffset": -0.030000,
+				"SeedChooserBigScale": 1.300000,
+				"HomeWorld": "cowboy",
+				"IntegerID": 25,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"melonpult"
+			],
+			"objdata": {
+				"TypeName": "melonpult",
+				"PlantFramework": "PlantMelonpult",
+				"PlantResourceGroups": [
+					"PlantMelonpult",
+					"PlantMelonpultAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantMelonpult"
+				],
+				"Properties": "RTID(MelonpultDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_MELONPULT",
+				"HomeWorld": "cowboy",
+				"SeedChooserBigVerticalOffset": 0.460000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.250000,
+				"IntegerID": 7,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"wintermelon"
+			],
+			"objdata": {
+				"TypeName": "wintermelon",
+				"PlantFramework": "PlantWinterMelon",
+				"PlantResourceGroups": [
+					"PlantWinterMelon",
+					"PlantWinterMelonAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantWinterMelon"
+				],
+				"Properties": "RTID(WinterMelonDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_WINTERMELON",
+				"HomeWorld": "cowboy",
+				"SeedChooserBigVerticalOffset": 0.460000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.250000,
+				"IntegerID": 34,
+				"Families": [
+					"Wintermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"imitater"
+			],
+			"objdata": {
+				"TypeName": "imitater",
+				"PlantFramework": "PlantImitater",
+				"PlantResourceGroups": [
+					"PlantImitater",
+					"PlantImitaterAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantImitater"
+				],
+				"Properties": "RTID(ImitaterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Imitater",
+				"PopAnim": "POPANIM_PLANT_IMITATER",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"ShadowScale": 0.900000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": -5
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 32,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"marigold"
+			],
+			"objdata": {
+				"TypeName": "marigold",
+				"PlantFramework": "PlantMarigold",
+				"PlantResourceGroups": [
+					"PlantMarigold"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantMarigold"
+				],
+				"Properties": "RTID(MarigoldDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Sunflower",
+				"PopAnim": "POPANIM_PLANT_MARIGOLD",
+				"IntegerID": 36,
+				"Enabled": false
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"laser_bean"
+			],
+			"objdata": {
+				"TypeName": "laser_bean",
+				"PlantFramework": "PlantLaserBean",
+				"PlantResourceGroups": [
+					"PlantLaserBean",
+					"PlantLaserBeanAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantLaserBean"
+				],
+				"Properties": "RTID(LaserBeanDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_LaserBean",
+				"PopAnim": "POPANIM_PLANT_LASERBEAN",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "future",
+				"IntegerID": 12,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"blover"
+			],
+			"objdata": {
+				"TypeName": "blover",
+				"PlantFramework": "PlantBlover",
+				"PlantResourceGroups": [
+					"PlantBlover",
+					"PlantBloverAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBlover"
+				],
+				"Properties": "RTID(BloverDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Blover",
+				"PopAnim": "POPANIM_PLANT_BLOWVER",
+				"SeedChooserBigVerticalOffset": 0.450000,
+				"SeedChooserBigHorizontalOffset": -0.020000,
+				"SeedChooserBigScale": 1.300000,
+				"HomeWorld": "future",
+				"IntegerID": 30,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"citron"
+			],
+			"objdata": {
+				"TypeName": "citron",
+				"PlantFramework": "PlantCitron",
+				"PlantResourceGroups": [
+					"PlantCitron",
+					"PlantCitronAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantCitron"
+				],
+				"Properties": "RTID(CitronDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Citron",
+				"PopAnim": "POPANIM_PLANT_CITRON",
+				"SeedChooserBigVerticalOffset": 0.230000,
+				"SeedChooserBigHorizontalOffset": -0.025000,
+				"SeedChooserBigScale": 1.500000,
+				"HomeWorld": "future",
+				"IntegerID": 40,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"empea"
+			],
+			"objdata": {
+				"TypeName": "empea",
+				"PlantFramework": "PlantEMPea",
+				"PlantResourceGroups": [
+					"PlantEMPea",
+					"PlantEMPeachAudio",
+					"PlantEMPeaBurstEffect"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantEMPea"
+				],
+				"Properties": "RTID(EMPeaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_EMPea",
+				"PopAnim": "POPANIM_PLANT_EMPEACH",
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"SeedChooserBigScale": 1.150000,
+				"HomeWorld": "future",
+				"IntegerID": 29,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"starfruit"
+			],
+			"objdata": {
+				"TypeName": "starfruit",
+				"PlantFramework": "PlantStarFruit",
+				"PlantResourceGroups": [
+					"PlantStarFruit",
+					"PlantStarfruitAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantStarFruit"
+				],
+				"Properties": "RTID(StarFruitDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_STARFRUIT",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 31,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"holonut"
+			],
+			"objdata": {
+				"TypeName": "holonut",
+				"PlantFramework": "PlantHolonut",
+				"PlantResourceGroups": [
+					"PlantHolonut",
+					"PlantInfinutAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHolonut"
+				],
+				"Properties": "RTID(HolonutDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Holonut",
+				"PopAnim": "POPANIM_PLANT_INFINUT",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.250000,
+				"HomeWorld": "future",
+				"IntegerID": 28,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"magnifyinggrass"
+			],
+			"objdata": {
+				"TypeName": "magnifyinggrass",
+				"PlantFramework": "PlantMagnifyingGrass",
+				"PlantResourceGroups": [
+					"PlantMagnifyingGrass",
+					"PlantMagnifyingGrassAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantMagnifyingGrass"
+				],
+				"Properties": "RTID(MagnifyingGrassDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_MagnifyingGrass",
+				"PopAnim": "POPANIM_PLANT_MAGNIFYING_GRASS",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigHorizontalOffset": -0.030000,
+				"HomeWorld": "future",
+				"IntegerID": 26,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypePowerPlant",
+			"aliases": [
+				"powerplant"
+			],
+			"objdata": {
+				"#comment": "TileTurnip",
+				"TypeName": "powerplant",
+				"PlantFramework": "PlantPowerPlant",
+				"PlantResourceGroups": [
+					"PlantPowerPlant",
+					"PlantPowerPlantAudio",
+					"PowerTileModule"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPowerPlant"
+				],
+				"Properties": "RTID(PowerPlantDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_POWERPLANT_PROTO",
+				"SeedChooserBigVerticalOffset": 0.320000,
+				"SeedChooserBigHorizontalOffset": 0.050000,
+				"HomeWorld": "future",
+				"IntegerID": 41,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"hypnoshroom"
+			],
+			"objdata": {
+				"TypeName": "hypnoshroom",
+				"PlantFramework": "PlantHypnoShroom",
+				"PlantResourceGroups": [
+					"PlantHypnoShroom",
+					"PlantHypnoShroomAudio",
+					"HypnoShroomEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHypnoShroom"
+				],
+				"Properties": "RTID(HypnoShroomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HypnoShroom",
+				"PopAnim": "POPANIM_PLANT_HYPNOSHROOM",
+				"SeedChooserBigVerticalOffset": 0.350000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": -5
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 52,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sunshroom"
+			],
+			"objdata": {
+				"TypeName": "sunshroom",
+				"PlantFramework": "PlantSunshroom",
+				"PlantResourceGroups": [
+					"PlantSunshroom",
+					"PlantSunShroomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSunshroom"
+				],
+				"Properties": "RTID(Sunshroom@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Sunshroom",
+				"PopAnim": "POPANIM_PLANT_SUNSHROOM",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "dark",
+				"IntegerID": 42,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"puffshroom"
+			],
+			"objdata": {
+				"TypeName": "puffshroom",
+				"PlantFramework": "PlantPuffshroom",
+				"PlantResourceGroups": [
+					"PlantPuffshroom",
+					"PlantPuffShroomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPuffshroom"
+				],
+				"Properties": "RTID(PuffshroomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Puffshroom",
+				"PopAnim": "POPANIM_PLANT_PUFFSHROOM",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "dark",
+				"IntegerID": 44,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"fumeshroom"
+			],
+			"objdata": {
+				"TypeName": "fumeshroom",
+				"PlantFramework": "PlantFumeshroom",
+				"PlantResourceGroups": [
+					"PlantFumeshroom",
+					"PlantFumeShroomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantFumeshroom"
+				],
+				"Properties": "RTID(FumeshroomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Fumeshroom",
+				"PopAnim": "POPANIM_PLANT_FUMESHROOM",
+				"SeedChooserBigVerticalOffset": 0.320000,
+				"HomeWorld": "dark",
+				"IntegerID": 55,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sunbean"
+			],
+			"objdata": {
+				"TypeName": "sunbean",
+				"PlantFramework": "PlantSunBean",
+				"PlantResourceGroups": [
+					"PlantSunBean",
+					"PlantSunBeanEffect",
+					"PlantSunBeanAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSunBean"
+				],
+				"Properties": "RTID(SunBeanDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SUNBEAN",
+				"SeedChooserBigVerticalOffset": 0.370000,
+				"SeedChooserBigHorizontalOffset": 0.050000,
+				"HomeWorld": "dark",
+				"IntegerID": 50,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"peanut"
+			],
+			"objdata": {
+				"TypeName": "peanut",
+				"PlantFramework": "PlantPeanut",
+				"PlantResourceGroups": [
+					"PlantPeanut",
+					"PlantPeanutAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPeanut"
+				],
+				"Properties": "RTID(PeanutDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Peanut",
+				"PopAnim": "POPANIM_PLANT_PEANUT",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.300000,
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": -5
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 54,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"magnetshroom"
+			],
+			"objdata": {
+				"TypeName": "magnetshroom",
+				"PlantFramework": "PlantMagnetShroom",
+				"PlantResourceGroups": [
+					"PlantMagnetShroom",
+					"PlantMagnetShroomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantMagnetShroom"
+				],
+				"Properties": "RTID(MagnetShroomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Magnetshroom",
+				"PopAnim": "POPANIM_PLANT_MAGNETSHROOM",
+				"SeedChooserBigVerticalOffset": 0.380000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"HomeWorld": "dark",
+				"IntegerID": 51,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"chomper"
+			],
+			"objdata": {
+				"TypeName": "chomper",
+				"PlantFramework": "PlantChomper",
+				"PlantResourceGroups": [
+					"PlantChomper",
+					"PlantChomperAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantChomper"
+				],
+				"Properties": "RTID(ChomperDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Chomper",
+				"PopAnim": "POPANIM_PLANT_CHOMPER",
+				"SeedChooserVerticalOffset": 0.750000,
+				"SeedChooserBigVerticalOffset": 0.600000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.150000,
+				"ShadowScale": 1,
+				"ShadowOffset": {
+					"x": -5,
+					"y": -7
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 63,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeLilyPad",
+			"aliases": [
+				"lilypad"
+			],
+			"objdata": {
+				"TypeName": "lilypad",
+				"PlantFramework": "PlantLilyPad",
+				"PlantResourceGroups": [
+					"PlantLilyPad",
+					"PlantLilyPadAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantLilyPad"
+				],
+				"Properties": "RTID(LilyPadDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_LILYPAD",
+				"HomeWorld": "beach",
+				"AlmanacBackdropName": "beach_water",
+				"SeedChooserBigVerticalOffset": 0.260000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.350000,
+				"IntegerID": 58,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeTangleKelp",
+			"aliases": [
+				"tanglekelp"
+			],
+			"objdata": {
+				"TypeName": "tanglekelp",
+				"PlantFramework": "PlantTangleKelp",
+				"PlantResourceGroups": [
+					"PlantTangleKelp",
+					"PlantTangleKelpAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantTangleKelp"
+				],
+				"Properties": "RTID(TangleKelpDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_TangleKelp",
+				"PopAnim": "POPANIM_PLANT_TANGLEKELP",
+				"HomeWorld": "beach",
+				"AlmanacBackdropName": "beach_water",
+				"SeedChooserBigVerticalOffset": 0.330000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.300000,
+				"HasStoreShadow": false,
+				"IntegerID": 61,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"bowlingbulb"
+			],
+			"objdata": {
+				"TypeName": "bowlingbulb",
+				"PlantFramework": "PlantBowlingBulb",
+				"PlantResourceGroups": [
+					"PlantBowlingBulb",
+					"PlantBowlingBulbAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBowlingBulb"
+				],
+				"Properties": "RTID(BowlingBulbDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_BowlingBulb",
+				"PopAnim": "POPANIM_PLANT_BOWLINGBULB",
+				"SeedChooserBigVerticalOffset": 0.260000,
+				"HomeWorld": "beach",
+				"IntegerID": 59,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"homingthistle"
+			],
+			"objdata": {
+				"TypeName": "homingthistle",
+				"PlantFramework": "PlantHomingThistle",
+				"PlantResourceGroups": [
+					"PlantHomingThistle",
+					"PlantHomingThistleAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHomingThistle"
+				],
+				"Properties": "RTID(HomingThistleDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HomingThistle",
+				"PopAnim": "POPANIM_PLANT_HOMINGTHISTLE",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigScale": 1.300000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 3
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 62,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"guacodile"
+			],
+			"objdata": {
+				"TypeName": "guacodile",
+				"PlantFramework": "PlantGuacodile",
+				"PlantResourceGroups": [
+					"PlantGuacodile",
+					"PlantGuacodileAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGuacodile"
+				],
+				"Properties": "RTID(GuacodileDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Guacodile",
+				"PopAnim": "POPANIM_PLANT_GUACODILE",
+				"HomeWorld": "beach",
+				"AlmanacBackdropName": "beach_water",
+				"IntegerID": 64,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"banana"
+			],
+			"objdata": {
+				"TypeName": "banana",
+				"PlantFramework": "PlantBanana",
+				"PlantResourceGroups": [
+					"PlantBanana",
+					"PlantBananaAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBanana"
+				],
+				"Properties": "RTID(BananaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Banana",
+				"PopAnim": "POPANIM_PLANT_BANANA",
+				"SeedChooserBigVerticalOffset": 0.420000,
+				"SeedChooserBigScale": 1.200000,
+				"HomeWorld": "beach",
+				"IntegerID": 60,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"ghostpepper"
+			],
+			"objdata": {
+				"TypeName": "ghostpepper",
+				"PlantFramework": "PlantGhostPepper",
+				"PlantResourceGroups": [
+					"PlantGhostPepper",
+					"PlantGhostPepperAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGhostPepper"
+				],
+				"Properties": "RTID(GhostPepperDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_GhostPepper",
+				"PopAnim": "POPANIM_PLANT_GHOSTPEPPER",
+				"SeedChooserBigVerticalOffset": 0.350000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 65,
+				"Families": [
+					"Peppermint"
+				],
+				"Seasons": [
+					"fall"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sweetpotato"
+			],
+			"objdata": {
+				"TypeName": "sweetpotato",
+				"PlantFramework": "PlantSweetPotato",
+				"PlantResourceGroups": [
+					"PlantSweetPotato",
+					"PlantSweetPotatoAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSweetPotato"
+				],
+				"Properties": "RTID(SweetPotatoDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_SweetPotato",
+				"PopAnim": "POPANIM_PLANT_SWEETPOTATO",
+				"SeedChooserBigVerticalOffset": 0.350000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 66,
+				"Families": [
+					"Reinforcemint"
+				],
+				"Seasons": [
+					"fall"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sapfling"
+			],
+			"objdata": {
+				"TypeName": "sapfling",
+				"PlantFramework": "PlantSapfling",
+				"PlantResourceGroups": [
+					"PlantSapfling",
+					"PlantSapflingAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSapfling"
+				],
+				"Properties": "RTID(SapflingDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Sapfling",
+				"PopAnim": "POPANIM_PLANT_SAPFLING",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigHorizontalOffset": -0.050000,
+				"SeedChooserBigScale": 1.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 67,
+				"Families": [
+					"Containmint"
+				],
+				"Seasons": [
+					"winter"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"hurrikale"
+			],
+			"objdata": {
+				"TypeName": "hurrikale",
+				"PlantFramework": "PlantHurrikale",
+				"PlantResourceGroups": [
+					"PlantHurrikale",
+					"PlantHurrikaleAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHurrikale"
+				],
+				"Properties": "RTID(HurrikaleDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Blover",
+				"PopAnim": "POPANIM_PLANT_HURRIKALE",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.450000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.300000,
+				"ShadowScale": 0.900000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": -4
+				},
+				"IntegerID": 68,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeHotPotato",
+			"aliases": [
+				"hotpotato"
+			],
+			"objdata": {
+				"TypeName": "hotpotato",
+				"PlantFramework": "PlantHotPotato",
+				"PlantResourceGroups": [
+					"PlantHotPotato",
+					"PlantHotPotatoAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHotPotato"
+				],
+				"Properties": "RTID(HotPotatoDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HotPotato",
+				"PopAnim": "POPANIM_PLANT_HOTPOTATO",
+				"SeedChooserBigVerticalOffset": 0.200000,
+				"SeedChooserBigScale": 1.550000,
+				"HomeWorld": "iceage",
+				"TargetableGridItemTypes": {
+					"ListType": "includelist",
+					"List": [
+						"planttarget_iceblock",
+						"zombietarget_iceblock",
+						"zomboss_iceage_glacier_block"
+					]
+				},
+				"UnlockedTargetableGridItemTypes": {
+					"ListType": "includelist",
+					"List": [
+						"planttarget_squid"
+					]
+				},
+				"UnlockedWorldsAvailable": [
+					"beach",
+					"modern"
+				],
+				"IntegerID": 72,
+				"Families": [
+					"Peppermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"pepperpult"
+			],
+			"objdata": {
+				"TypeName": "pepperpult",
+				"PlantFramework": "PlantPepperpult",
+				"PlantResourceGroups": [
+					"PlantPepperpult",
+					"PlantPepperPultAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPepperpult"
+				],
+				"Properties": "RTID(PepperpultDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Pepperpult",
+				"PopAnim": "POPANIM_PLANT_PEPPERPULT",
+				"SeedChooserBigVerticalOffset": 0.420000,
+				"SeedChooserBigHorizontalOffset": -0.100000,
+				"SeedChooserBigScale": 1.200000,
+				"HomeWorld": "iceage",
+				"IntegerID": 71,
+				"Families": [
+					"Peppermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeChardGuard",
+			"aliases": [
+				"chardguard"
+			],
+			"objdata": {
+				"TypeName": "chardguard",
+				"PlantFramework": "PlantChardGuard",
+				"PlantResourceGroups": [
+					"PlantChardGuard",
+					"PlantChardGuardAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantChardGuard"
+				],
+				"Properties": "RTID(ChardGuardDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_ChardGuard",
+				"PopAnim": "POPANIM_PLANT_CHARDGUARD",
+				"SeedChooserBigVerticalOffset": 0.360000,
+				"SeedChooserBigHorizontalOffset": -0.100000,
+				"SeedChooserBigScale": 1.350000,
+				"HomeWorld": "iceage",
+				"IntegerID": 70,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"firepeashooter"
+			],
+			"objdata": {
+				"TypeName": "firepeashooter",
+				"PlantFramework": "PlantFirePeashooter",
+				"PlantResourceGroups": [
+					"PlantFirePeashooter",
+					"FirePeaEffects",
+					"PlantFirePeaShooterAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantFirePeashooter"
+				],
+				"Properties": "RTID(FirePeashooterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_FirePeashooter",
+				"PopAnim": "POPANIM_PLANT_FIREPEASHOOTER",
+				"SeedChooserBigVerticalOffset": 0.390000,
+				"SeedChooserBigHorizontalOffset": -0.040000,
+				"SeedChooserBigScale": 1.350000,
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 2
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 53,
+				"Families": [
+					"Peppermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"stunion"
+			],
+			"objdata": {
+				"TypeName": "stunion",
+				"PlantFramework": "PlantStunion",
+				"PlantResourceGroups": [
+					"PlantStunion",
+					"PlantStunionAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantStunion"
+				],
+				"Properties": "RTID(StunionDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_STUNION",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"HomeWorld": "iceage",
+				"IntegerID": 74,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"xshot"
+			],
+			"objdata": {
+				"TypeName": "xshot",
+				"PlantFramework": "PlantXShot",
+				"PlantResourceGroups": [
+					"PlantXShot",
+					"PlantRotorutabagaAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantXShot"
+				],
+				"Properties": "RTID(XShotDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_ROTORUTABAGA",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "iceage",
+				"IntegerID": 69,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"dandelion"
+			],
+			"objdata": {
+				"TypeName": "dandelion",
+				"PlantFramework": "PlantDandelion",
+				"PlantResourceGroups": [
+					"PlantDandelion",
+					"PlantDandelionAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantDandelion"
+				],
+				"Properties": "RTID(DandelionDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Dandelion",
+				"PopAnim": "POPANIM_PLANT_DANDELION",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"SeedChooserBigHorizontalOffset": -0.030000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 76,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"lavaguava"
+			],
+			"objdata": {
+				"TypeName": "lavaguava",
+				"PlantFramework": "PlantLavaGuava",
+				"PlantResourceGroups": [
+					"PlantLavaGuava",
+					"PlantLavaGuavaAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantLavaGuava"
+				],
+				"Properties": "RTID(LavaGuavaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_LavaGuava",
+				"PopAnim": "POPANIM_PLANT_LAVAGUAVA",
+				"SeedChooserBigHorizontalOffset": -0.040000,
+				"SeedChooserBigVerticalOffset": 0.350000,
+				"ShadowScale": 0.700000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": -2
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 82,
+				"Families": [
+					"Peppermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"redstinger"
+			],
+			"objdata": {
+				"TypeName": "redstinger",
+				"PlantFramework": "PlantRedStinger",
+				"PlantResourceGroups": [
+					"PlantRedStinger",
+					"PlantRedStingerAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantRedStinger"
+				],
+				"Properties": "RTID(RedStingerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_RedStinger",
+				"PopAnim": "POPANIM_PLANT_REDSTINGER",
+				"SeedChooserBigVerticalOffset": 0.320000,
+				"HomeWorld": "lostcity",
+				"IntegerID": 78,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"akee"
+			],
+			"objdata": {
+				"TypeName": "akee",
+				"PlantFramework": "PlantAkee",
+				"PlantResourceGroups": [
+					"PlantAkee",
+					"PlantAkeeAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantAkee"
+				],
+				"Properties": "RTID(AkeeDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_AKEE",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"HomeWorld": "lostcity",
+				"IntegerID": 81,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"endurian"
+			],
+			"objdata": {
+				"TypeName": "endurian",
+				"PlantFramework": "PlantEndurian",
+				"PlantResourceGroups": [
+					"PlantEndurian",
+					"PlantEndurianAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantEndurian"
+				],
+				"Properties": "RTID(EndurianDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Endurian",
+				"PopAnim": "POPANIM_PLANT_ENDURIAN",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigScale": 1.300000,
+				"HomeWorld": "lostcity",
+				"IntegerID": 84,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"toadstool"
+			],
+			"objdata": {
+				"TypeName": "toadstool",
+				"PlantFramework": "PlantToadstool",
+				"PlantResourceGroups": [
+					"PlantToadstool",
+					"PlantToadStoolAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantToadstool"
+				],
+				"Properties": "RTID(ToadstoolDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Toadstool",
+				"PopAnim": "POPANIM_PLANT_TOADSTOOL",
+				"SeedChooserVerticalOffset": 0.780000,
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigHorizontalOffset": -0.090000,
+				"ShadowScale": 1.100000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 83,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"stallia"
+			],
+			"objdata": {
+				"TypeName": "stallia",
+				"PlantFramework": "PlantStallia",
+				"PlantResourceGroups": [
+					"PlantStallia",
+					"PlantStalliaEffects",
+					"PlantStalliaAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantStallia"
+				],
+				"Properties": "RTID(StalliaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Stallia",
+				"PopAnim": "POPANIM_PLANT_STALLIA",
+				"SeedChooserBigHorizontalOffset": -0.050000,
+				"SeedChooserBigVerticalOffset": 0.350000,
+				"HomeWorld": "lostcity",
+				"IntegerID": 85,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeGoldLeaf",
+			"aliases": [
+				"goldleaf"
+			],
+			"objdata": {
+				"TypeName": "goldleaf",
+				"PlantFramework": "PlantGoldLeaf",
+				"PlantResourceGroups": [
+					"PlantGoldLeaf",
+					"PlantGoldLeafAudio",
+					"GoldTileModule"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGoldLeaf"
+				],
+				"Properties": "RTID(GoldLeafDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_GOLDLEAF",
+				"SeedChooserBigVerticalOffset": 0.250000,
+				"SeedChooserBigScale": 1.500000,
+				"HomeWorld": "lostcity",
+				"IntegerID": 79,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"strawburst"
+			],
+			"objdata": {
+				"TypeName": "strawburst",
+				"PlantFramework": "PlantStrawburst",
+				"PlantResourceGroups": [
+					"PlantStrawburst",
+					"PlantStrawburstAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantStrawburst"
+				],
+				"Properties": "RTID(StrawburstDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Strawburst",
+				"PopAnim": "POPANIM_PLANT_STRAWBURST",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 86,
+				"Families": [
+					"Bombardmint"
+				],
+				"Seasons": [
+					"summer"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"cactus"
+			],
+			"objdata": {
+				"TypeName": "cactus",
+				"PlantFramework": "PlantCactus",
+				"PlantResourceGroups": [
+					"PlantCactus",
+					"PlantCactusAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantCactus"
+				],
+				"Properties": "RTID(CactusDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Cactus",
+				"PopAnim": "POPANIM_PLANT_CACTUS",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.540000,
+				"SeedChooserBigHorizontalOffset": -0.030000,
+				"SeedChooserBigScale": 1.100000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 10
+				},
+				"HasStoreShadow": false,
+				"IntegerID": 87,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"phatbeet"
+			],
+			"objdata": {
+				"TypeName": "phatbeet",
+				"PlantFramework": "PlantPhatBeet",
+				"PlantResourceGroups": [
+					"PlantPhatBeet",
+					"PlantPhatBeetAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPhatBeet"
+				],
+				"Properties": "RTID(PhatBeetDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_PHATBEETS",
+				"SeedChooserBigVerticalOffset": 0.320000,
+				"HomeWorld": "eighties",
+				"IntegerID": 88,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeCeleryStalker",
+			"aliases": [
+				"celerystalker"
+			],
+			"objdata": {
+				"TypeName": "celerystalker",
+				"PlantFramework": "PlantCeleryStalker",
+				"PlantResourceGroups": [
+					"PlantCeleryStalker",
+					"PlantCeleryStalkerAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantCeleryStalker"
+				],
+				"Properties": "RTID(CeleryStalkerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_CeleryStalker",
+				"PopAnim": "POPANIM_PLANT_CELERYSTALKER",
+				"HomeWorld": "eighties",
+				"SeedChooserBigVerticalOffset": 0.550000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.100000,
+				"IntegerID": 90,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"thymewarp"
+			],
+			"objdata": {
+				"TypeName": "thymewarp",
+				"PlantFramework": "PlantThymeWarp",
+				"PlantResourceGroups": [
+					"PlantThymeWarp",
+					"ZombieWrapEffect",
+					"PlantThymeWarpAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantThymeWarp"
+				],
+				"Properties": "RTID(ThymeWarpDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_THYMEWARP",
+				"HomeWorld": "eighties",
+				"IntegerID": 89,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"electricblueberry"
+			],
+			"objdata": {
+				"TypeName": "electricblueberry",
+				"PlantFramework": "PlantElectricBlueberry",
+				"PlantResourceGroups": [
+					"PlantElectricBlueberry",
+					"PlantElectricBlueberryAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantElectricBlueberry"
+				],
+				"Properties": "RTID(ElectricBlueberryDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_ElectricBlueberry",
+				"PopAnim": "POPANIM_PLANT_ELECTRICBLUEBERRY",
+				"SeedChooserBigVerticalOffset": 0.120000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.700000,
+				"ShadowScale": 0.750000,
+				"ShadowOffset": {
+					"x": 2,
+					"y": -3
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 91,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"garlic"
+			],
+			"objdata": {
+				"TypeName": "garlic",
+				"PlantFramework": "PlantGarlic",
+				"PlantResourceGroups": [
+					"PlantGarlic",
+					"PlantGarlicEffects",
+					"PlantChilibeanGas",
+					"PlantGarlicAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGarlic"
+				],
+				"Properties": "RTID(GarlicDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Garlic",
+				"SeedChooserBigVerticalOffset": 0.380000,
+				"SeedChooserBigHorizontalOffset": 0.050000,
+				"PopAnim": "POPANIM_PLANT_GARLIC",
+				"HomeWorld": "eighties",
+				"IntegerID": 93,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sporeshroom"
+			],
+			"objdata": {
+				"TypeName": "sporeshroom",
+				"PlantFramework": "PlantSporeshroom",
+				"PlantResourceGroups": [
+					"PlantSporeshroom",
+					"PlantSporeshroomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSporeshroom"
+				],
+				"Properties": "RTID(SporeshroomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SPORESHROOM",
+				"SeedChooserBigHorizontalOffset": -0.030000,
+				"HomeWorld": "eighties",
+				"IntegerID": 92,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeIntensiveCarrot",
+			"aliases": [
+				"intensivecarrot"
+			],
+			"objdata": {
+				"TypeName": "intensivecarrot",
+				"PlantFramework": "PlantIntensiveCarrot",
+				"PlantResourceGroups": [
+					"PlantIntensiveCarrot",
+					"PlantIntensiveCarrotAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantIntensiveCarrot"
+				],
+				"Properties": "RTID(IntensiveCarrotDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_INTENSIVECARROT",
+				"SeedChooserBigVerticalOffset": 0.480000,
+				"SeedChooserBigScale": 1.200000,
+				"HomeWorld": "eighties",
+				"IntegerID": 94,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"jackolantern"
+			],
+			"objdata": {
+				"TypeName": "jackolantern",
+				"PlantFramework": "PlantJackOLantern",
+				"PlantResourceGroups": [
+					"PlantJackOLantern",
+					"PlantJackOLanternAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantJackOLantern"
+				],
+				"Properties": "RTID(JackOLanternDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_JackOLantern",
+				"PopAnim": "POPANIM_PLANT_JACKOLANTERN",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigHorizontalOffset": -0.050000,
+				"SeedChooserBigScale": 1.325000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 7
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 95,
+				"Families": [
+					"Peppermint"
+				],
+				"Seasons": [
+					"fall"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"grapeshot"
+			],
+			"objdata": {
+				"TypeName": "grapeshot",
+				"PlantFramework": "PlantGrapeshot",
+				"PlantResourceGroups": [
+					"PlantGrapeshot",
+					"PlantGrapeshotAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGrapeshot"
+				],
+				"Properties": "RTID(GrapeshotDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_GRAPESHOT",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.450000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.250000,
+				"ShadowScale": 0.900000,
+				"ShadowOffset": {
+					"x": 2,
+					"y": -3
+				},
+				"IntegerID": 97,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"primalpeashooter"
+			],
+			"objdata": {
+				"TypeName": "primalpeashooter",
+				"PlantFramework": "PlantPrimalPeashooter",
+				"PlantResourceGroups": [
+					"PlantPrimalPeashooter",
+					"PlantPrimalPeaShooterAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPrimalPeashooter"
+				],
+				"Properties": "RTID(PrimalPeashooterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_PRIMAL_PEASHOOTER",
+				"SeedChooserBigVerticalOffset": 0.350000,
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 2
+				},
+				"HomeWorld": "dino",
+				"IntegerID": 96,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"primalwallnut"
+			],
+			"objdata": {
+				"TypeName": "primalwallnut",
+				"PlantFramework": "PlantPrimalWallnut",
+				"PlantResourceGroups": [
+					"PlantPrimalWallnut",
+					"PlantPrimalWallnutAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPrimalWallnut"
+				],
+				"Properties": "RTID(PrimalWallnutDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Wallnut",
+				"PopAnim": "POPANIM_PLANT_PRIMAL_WALLNUT",
+				"SeedChooserBigVerticalOffset": 0.420000,
+				"SeedChooserBigScale": 1.300000,
+				"HomeWorld": "dino",
+				"IntegerID": 98,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"perfumeshroom"
+			],
+			"objdata": {
+				"TypeName": "perfumeshroom",
+				"PlantFramework": "PlantPerfumeShroom",
+				"PlantResourceGroups": [
+					"PlantPerfumeShroom",
+					"PlantPerfShroomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPerfumeShroom"
+				],
+				"Properties": "RTID(PerfumeShroomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_PERFSHROOM",
+				"HomeWorld": "dino",
+				"IntegerID": 100,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"coldsnapdragon"
+			],
+			"objdata": {
+				"TypeName": "coldsnapdragon",
+				"PlantFramework": "PlantSnapdragon",
+				"PlantResourceGroups": [
+					"PlantColdSnapdragon",
+					"PlantColdSnapdragonEffects",
+					"PlantColdSnapdragonAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantColdSnapdragon"
+				],
+				"Properties": "RTID(ColdSnapdragonDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_COLD_SNAPDRAGON",
+				"SeedChooserBigVerticalOffset": 0.480000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.250000,
+				"ShadowOffset": {
+					"x": -0.500000,
+					"y": 0
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 99,
+				"Families": [
+					"Wintermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"primalsunflower"
+			],
+			"objdata": {
+				"TypeName": "primalsunflower",
+				"PlantFramework": "PlantSunflower",
+				"PlantResourceGroups": [
+					"PlantPrimalSunflower",
+					"PlantPrimalSunflowerAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPrimalSunflower"
+				],
+				"Properties": "RTID(PrimalSunflowerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Sunflower",
+				"PopAnim": "POPANIM_PLANT_PRIMAL_SUNFLOWER",
+				"SeedChooserBigVerticalOffset": 0.360000,
+				"ShadowScale": 0.900000,
+				"HomeWorld": "dino",
+				"IntegerID": 101,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"primalpotatomine"
+			],
+			"objdata": {
+				"TypeName": "primalpotatomine",
+				"PlantFramework": "PlantPotatomine",
+				"PlantResourceGroups": [
+					"PlantPrimalPotatomine",
+					"PlantPrimalPotatomineExplosion",
+					"PlantPrimalPotatomineAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPrimalPotatomine"
+				],
+				"Properties": "RTID(PrimalPotatomineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_PotatoMine",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"PopAnim": "POPANIM_PLANT_PRIMAL_POTATOMINE",
+				"HomeWorld": "dino",
+				"IntegerID": 102,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"shrinkingviolet"
+			],
+			"objdata": {
+				"TypeName": "shrinkingviolet",
+				"PlantFramework": "PlantShrinkingViolet",
+				"PlantResourceGroups": [
+					"PlantShrinkingViolet",
+					"PlantShrinkingVioletAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantShrinkingViolet"
+				],
+				"Properties": "RTID(ShrinkingVioletDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SHRINKING_VIOLET",
+				"SeedChooserBigVerticalOffset": 0.050000,
+				"SeedChooserBigScale": 1.800000,
+				"ShadowScale": 0.700000,
+				"ShadowOffset": {
+					"x": 2,
+					"y": -2
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 103,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"moonflower"
+			],
+			"objdata": {
+				"TypeName": "moonflower",
+				"PlantFramework": "PlantMoonFlower",
+				"PlantResourceGroups": [
+					"PlantMoonFlower",
+					"PlantMoonFlowerEffects",
+					"PlantMoonflowerAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantMoonFlower"
+				],
+				"Properties": "RTID(MoonFlowerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_MoonFlower",
+				"PopAnim": "POPANIM_PLANT_MOONFLOWER",
+				"HomeWorld": "modern",
+				"SeedChooserBigVerticalOffset": 0.420000,
+				"SeedChooserBigHorizontalOffset": 0.030000,
+				"SeedChooserBigScale": 1.200000,
+				"IntegerID": 104,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"nightshade"
+			],
+			"objdata": {
+				"TypeName": "nightshade",
+				"PlantFramework": "PlantNightshade",
+				"PlantResourceGroups": [
+					"PlantNightshade",
+					"PlantNightshadeAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantNightshade"
+				],
+				"AnimRigClass": "PlantAnimRig_Nightshade",
+				"PopAnim": "POPANIM_PLANT_NIGHTSHADE",
+				"Properties": "RTID(NightshadeDefault@PlantProperties)",
+				"HomeWorld": "modern",
+				"SeedChooserBigVerticalOffset": 0.430000,
+				"SeedChooserBigScale": 1.250000,
+				"IntegerID": 105,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"shadowshroom"
+			],
+			"objdata": {
+				"TypeName": "shadowshroom",
+				"PlantFramework": "PlantShadowShroom",
+				"PlantResourceGroups": [
+					"PlantShadowshroom",
+					"PlantShadowshroomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantShadowshroom"
+				],
+				"Properties": "RTID(ShadowShroomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_ShadowShroom",
+				"PopAnim": "POPANIM_PLANT_SHADOWSHROOM",
+				"HomeWorld": "modern",
+				"IntegerID": 106,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"bloominghearts"
+			],
+			"objdata": {
+				"TypeName": "bloominghearts",
+				"PlantFramework": "PlantBloomingHearts",
+				"PlantResourceGroups": [
+					"PlantBloomingHearts",
+					"PlantBloomingHeartsAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBloomingHearts"
+				],
+				"Properties": "RTID(BloomingHeartsDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_BloomingHearts",
+				"PopAnim": "POPANIM_PLANT_BLOOMING_HEARTS",
+				"SeedChooserBigVerticalOffset": 0.320000,
+				"SeedChooserBigHorizontalOffset": -0.100000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 107,
+				"Families": [
+					"Ailmint"
+				],
+				"Seasons": [
+					"winter"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"dusklobber"
+			],
+			"objdata": {
+				"TypeName": "dusklobber",
+				"PlantFramework": "PlantDusklobber",
+				"PlantResourceGroups": [
+					"PlantDusklobber",
+					"PlantDuskLobberAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantDusklobber"
+				],
+				"Properties": "RTID(DusklobberDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Dusklobber",
+				"PopAnim": "POPANIM_PLANT_DUSKLOBBER",
+				"SeedChooserBigScale": 1.450000,
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"HomeWorld": "modern",
+				"IntegerID": 110,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"escaperoot"
+			],
+			"objdata": {
+				"TypeName": "escaperoot",
+				"PlantFramework": "PlantEscapeRoot",
+				"PlantResourceGroups": [
+					"PlantEscapeRoot",
+					"PlantEscapeRootAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantEscapeRoot"
+				],
+				"Properties": "RTID(EscapeRootDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_EscapeRoot",
+				"PopAnim": "POPANIM_PLANT_ESCAPEROOT",
+				"BundleVerticalOffset": 60,
+				"SeedChooserVerticalOffset": 0.950000,
+				"SeedChooserBigVerticalOffset": 0.200000,
+				"SeedChooserBigHorizontalOffset": -0.050000,
+				"SeedChooserBigScale": 1.500000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 108,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"grimrose"
+			],
+			"objdata": {
+				"TypeName": "grimrose",
+				"PlantFramework": "PlantGrimrose",
+				"PlantResourceGroups": [
+					"PlantGrimrose",
+					"PlantGrimroseAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGrimrose"
+				],
+				"Properties": "RTID(GrimroseDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Grimrose",
+				"PopAnim": "POPANIM_PLANT_GRIMROSE",
+				"SeedChooserBigVerticalOffset": 0.450000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.150000,
+				"HomeWorld": "modern",
+				"IntegerID": 109,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"goldbloom"
+			],
+			"objdata": {
+				"TypeName": "goldbloom",
+				"PlantFramework": "PlantGoldbloom",
+				"PlantResourceGroups": [
+					"PlantGoldbloom",
+					"PlantGoldbloomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGoldbloom"
+				],
+				"Properties": "RTID(GoldbloomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Goldbloom",
+				"PopAnim": "POPANIM_PLANT_GOLDBLOOM",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"ShadowScale": 0.850000,
+				"ShadowOffset": {
+					"x": -2,
+					"y": -4
+				},
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"IntegerID": 111,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"electriccurrant"
+			],
+			"objdata": {
+				"TypeName": "electriccurrant",
+				"PlantFramework": "PlantElectricCurrant",
+				"PlantResourceGroups": [
+					"PlantElectricCurrant",
+					"PlantElectricCurrantAudio",
+					"PlantGarlicEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantElectricCurrant"
+				],
+				"Properties": "RTID(ElectricCurrantDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_ElectricCurrant",
+				"PopAnim": "POPANIM_PLANT_ELECTRICCURRANT",
+				"SeedChooserBigVerticalOffset": 0.280000,
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"IntegerID": 112,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"wasabiwhip"
+			],
+			"objdata": {
+				"TypeName": "wasabiwhip",
+				"PlantFramework": "PlantWasabiWhip",
+				"PlantResourceGroups": [
+					"PlantWasabiWhip",
+					"PlantWasabiWhipAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantWasabiWhip"
+				],
+				"Properties": "RTID(WasabiWhipDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_WasabiWhip",
+				"PopAnim": "POPANIM_PLANT_WASABIWHIP",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.420000,
+				"SeedChooserBigHorizontalOffset": -0.170000,
+				"SeedChooserBigScale": 1.250000,
+				"HasStoreShadow": false,
+				"IntegerID": 114,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"explodeonut"
+			],
+			"objdata": {
+				"TypeName": "explodeonut",
+				"PlantFramework": "PlantExplodeONut",
+				"PlantResourceGroups": [
+					"PlantExplodeONut",
+					"PlantExplodeONutAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantExplodeONut"
+				],
+				"Properties": "RTID(ExplodeONutDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_ExplodeONut",
+				"PopAnim": "POPANIM_PLANT_EXPLODEONUT",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 115,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"kiwibeast"
+			],
+			"objdata": {
+				"TypeName": "kiwibeast",
+				"PlantFramework": "PlantKiwiBeast",
+				"PlantResourceGroups": [
+					"PlantKiwiBeast",
+					"PlantKiwiBeastAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantKiwiBeast"
+				],
+				"Properties": "RTID(KiwiBeastDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_KiwiBeast",
+				"PopAnim": "POPANIM_PLANT_KIWIBEAST",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 1,
+					"y": 0
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 116,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"aloe"
+			],
+			"objdata": {
+				"TypeName": "aloe",
+				"PlantFramework": "PlantAloe",
+				"PlantResourceGroups": [
+					"PlantAloe",
+					"PlantAloeAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantAloe"
+				],
+				"Properties": "RTID(AloeDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Aloe",
+				"PopAnim": "POPANIM_PLANT_ALOE",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigHorizontalOffset": -0.030000,
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"IntegerID": 113,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"applemortar"
+			],
+			"objdata": {
+				"TypeName": "applemortar",
+				"PlantFramework": "PlantAppleMortar",
+				"PlantResourceGroups": [
+					"PlantAppleMortar",
+					"PlantAppleMortarAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantAppleMortar"
+				],
+				"Properties": "RTID(AppleMortarDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"PopAnim": "POPANIM_PLANT_APPLEMORTAR",
+				"SeedChooserBigVerticalOffset": 0.480000,
+				"SeedChooserBigScale": 1.150000,
+				"IntegerID": 117,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"bombegranate"
+			],
+			"objdata": {
+				"TypeName": "bombegranate",
+				"PlantFramework": "PlantBombegranate",
+				"PlantResourceGroups": [
+					"PlantBombegranate",
+					"PlantBombegranateAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBombegranate"
+				],
+				"Properties": "RTID(BombegranateDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"PopAnim": "POPANIM_PLANT_BOMBEGRANATE",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"IntegerID": 118,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"witchhazel"
+			],
+			"objdata": {
+				"TypeName": "witchhazel",
+				"PlantFramework": "PlantWitchHazel",
+				"PlantResourceGroups": [
+					"PlantWitchHazel",
+					"PlantWitchHazelEffects",
+					"PlantWitchHazelAudio",
+					"PlantToadstool",
+					"PlantToadStoolAudio",
+					"PlantFumeshroom",
+					"PlantFumeShroomAudio",
+					"PlantHypnoShroom",
+					"PlantHypnoShroomAudio",
+					"HypnoShroomEffects",
+					"PlantPuffshroom",
+					"PlantPuffShroomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantWitchHazel"
+				],
+				"Properties": "RTID(WitchHazelDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_WitchHazel",
+				"PopAnim": "POPANIM_PLANT_WITCH_HAZEL",
+				"SeedChooserBigVerticalOffset": 0.250000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.500000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 121,
+				"Families": [
+					"Enchantmint"
+				],
+				"Seasons": [
+					"fall"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"parsnip"
+			],
+			"objdata": {
+				"TypeName": "parsnip",
+				"PlantFramework": "PlantParsnip",
+				"PlantResourceGroups": [
+					"PlantParsnip",
+					"PlantParsnipAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantParsnip"
+				],
+				"Properties": "RTID(ParsnipDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Parsnip",
+				"PopAnim": "POPANIM_PLANT_PARSNIP",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.420000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.300000,
+				"IntegerID": 120,
+				"Families": [
+					"Enforcemint"
+				],
+				"Seasons": [
+					"spring"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"missiletoe"
+			],
+			"objdata": {
+				"TypeName": "missiletoe",
+				"PlantFramework": "PlantMissileToe",
+				"PlantResourceGroups": [
+					"PlantMissileToe",
+					"PlantMissileToeAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantMissileToe"
+				],
+				"Properties": "RTID(MissileToeDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_MissileToe",
+				"PopAnim": "POPANIM_PLANT_MISSILE_TOE",
+				"SeedChooserBigVerticalOffset": 0.360000,
+				"SeedChooserBigHorizontalOffset": 0.050000,
+				"SeedChooserBigScale": 1.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"ShadowOffset": {
+					"x": 5,
+					"y": 5
+				},
+				"IntegerID": 119,
+				"Families": [
+					"Wintermint"
+				],
+				"Seasons": [
+					"winter"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"hotdate"
+			],
+			"objdata": {
+				"TypeName": "hotdate",
+				"PlantFramework": "PlantHotDate",
+				"PlantResourceGroups": [
+					"PlantHotDate",
+					"EffectsJalapeno",
+					"PlantHotDateAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHotDate"
+				],
+				"Properties": "RTID(HotDateDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HotDate",
+				"PopAnim": "POPANIM_PLANT_HOTDATE",
+				"SeedChooserBigVerticalOffset": 0.350000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 122,
+				"Families": [
+					"Peppermint"
+				],
+				"Seasons": [
+					"winter"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"caulipower"
+			],
+			"objdata": {
+				"TypeName": "caulipower",
+				"PlantFramework": "PlantCaulipower",
+				"PlantResourceGroups": [
+					"PlantCaulipower",
+					"HypnoShroomEffects",
+					"PlantCauliPowerAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantCaulipower"
+				],
+				"Properties": "RTID(CaulipowerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Caulipower",
+				"PopAnim": "POPANIM_PLANT_CAULIPOWER",
+				"SeedChooserBigVerticalOffset": 0.120000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.700000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"HasStoreShadow": false,
+				"IntegerID": 123,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"solartomato"
+			],
+			"objdata": {
+				"TypeName": "solartomato",
+				"PlantFramework": "PlantSolarTomato",
+				"PlantResourceGroups": [
+					"PlantSolarTomato",
+					"PlantSolarTomatoAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSolarTomato"
+				],
+				"Properties": "RTID(SolarTomatoProps@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SOLAR_TOMATO",
+				"SeedChooserBigVerticalOffset": 0.120000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.700000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 124,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"electricpeashooter"
+			],
+			"objdata": {
+				"TypeName": "electricpeashooter",
+				"PlantFramework": "PlantElectricPeashooter",
+				"PlantResourceGroups": [
+					"PlantElectricPeashooter",
+					"PlantElectricPeashooterEffects",
+					"PlantLightningReedHit",
+					"PlantElectricPeashooterAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantElectricPeashooter"
+				],
+				"Properties": "RTID(ElectricPeashooterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_ELECTRIC_PEASHOOTER",
+				"SeedChooserBigVerticalOffset": 0.120000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.700000,
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 2
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 125,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeHollyKnight",
+			"aliases": [
+				"hollyknight"
+			],
+			"objdata": {
+				"TypeName": "hollyknight",
+				"PlantFramework": "PlantHollyKnight",
+				"PlantResourceGroups": [
+					"PlantHolly",
+					"PlantHollyAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHolly"
+				],
+				"Properties": "RTID(HollyKnightDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HollyKnight",
+				"PopAnim": "POPANIM_PLANT_HOLLY",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigScale": 1.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 126,
+				"Families": [
+					"Reinforcemint"
+				],
+				"Seasons": [
+					"winter"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"filamint"
+			],
+			"objdata": {
+				"TypeName": "filamint",
+				"PlantFramework": "PlantFilamint",
+				"PlantResourceGroups": [
+					"PlantFilamint",
+					"PlantFilamintAudio",
+					"PlantLightningReed",
+					"PlantLightningReedHit",
+					"PlantLightningReedAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantFilamint"
+				],
+				"Properties": "RTID(FilamintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_FILAMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"DenyPlantfoodCooldownReset": false,
+				"Families": [
+					"Filamint",
+					"Empowermint"
+				],
+				"IntegerID": 129,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"peppermint"
+			],
+			"objdata": {
+				"TypeName": "peppermint",
+				"PlantFramework": "PlantPeppermint",
+				"PlantResourceGroups": [
+					"PlantPeppermint",
+					"PlantPeppermintAudio",
+					"PlantFirePeashooter",
+					"PlantFirePeaShooterAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPeppermint"
+				],
+				"Properties": "RTID(PeppermintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_PEPPERMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Peppermint",
+					"Empowermint"
+				],
+				"IntegerID": 130,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"wintermint"
+			],
+			"objdata": {
+				"TypeName": "wintermint",
+				"PlantFramework": "PlantWintermint",
+				"PlantResourceGroups": [
+					"PlantWintermint",
+					"PlantWintermintAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantWintermint"
+				],
+				"Properties": "RTID(WintermintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_WINTERMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"SeedChooserBigHorizontalOffset": -0.050000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Wintermint",
+					"Empowermint"
+				],
+				"IntegerID": 131,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"enlightenmint"
+			],
+			"objdata": {
+				"TypeName": "enlightenmint",
+				"PlantFramework": "PlantEnlightenmint",
+				"PlantResourceGroups": [
+					"PlantEnlightenmint",
+					"PlantEnlightenmintAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantEnlightenmint"
+				],
+				"Properties": "RTID(EnlightenmintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_ENLIGHTENMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"SeedChooserBigHorizontalOffset": -0.070000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Enlightenmint",
+					"Empowermint"
+				],
+				"IntegerID": 132,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"reinforcemint"
+			],
+			"objdata": {
+				"TypeName": "reinforcemint",
+				"PlantFramework": "PlantReinforcemint",
+				"PlantResourceGroups": [
+					"PlantReinforcemint",
+					"PlantReinforcemintAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantReinforcemint"
+				],
+				"Properties": "RTID(ReinforcemintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_REINFORCEMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"DenyPlantfoodCooldownReset": false,
+				"Families": [
+					"Reinforcemint",
+					"Empowermint"
+				],
+				"IntegerID": 133,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"bombardmint"
+			],
+			"objdata": {
+				"TypeName": "bombardmint",
+				"PlantFramework": "PlantBombardmint",
+				"PlantResourceGroups": [
+					"PlantBombardmint",
+					"PlantBombardmintAudio",
+					"PlantCherryBomb",
+					"PlantCherryBombAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBombardmint"
+				],
+				"Properties": "RTID(BombardmintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_BOMBARDMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Bombardmint",
+					"Empowermint"
+				],
+				"IntegerID": 134,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"ailmint"
+			],
+			"objdata": {
+				"TypeName": "ailmint",
+				"PlantFramework": "PlantAilmint",
+				"PlantResourceGroups": [
+					"PlantAilmint",
+					"PlantAilmintAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantAilmint"
+				],
+				"Properties": "RTID(AilmintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_AILMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Ailmint",
+					"Empowermint"
+				],
+				"IntegerID": 135,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"enchantmint"
+			],
+			"objdata": {
+				"TypeName": "enchantmint",
+				"PlantFramework": "PlantEnchantmint",
+				"PlantResourceGroups": [
+					"PlantEnchantmint",
+					"PlantEnchantmintAudio",
+					"HypnoShroomEffects",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantEnchantmint"
+				],
+				"Properties": "RTID(EnchantmintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_ENCHANTMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Enchantmint",
+					"Empowermint"
+				],
+				"IntegerID": 136,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"containmint"
+			],
+			"objdata": {
+				"TypeName": "containmint",
+				"PlantFramework": "PlantContainmint",
+				"PlantResourceGroups": [
+					"PlantContainmint",
+					"PlantContainmintAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantContainmint"
+				],
+				"Properties": "RTID(ContainmintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_CONTAINMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Containmint",
+					"Empowermint"
+				],
+				"IntegerID": 137,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"enforcemint"
+			],
+			"objdata": {
+				"TypeName": "enforcemint",
+				"PlantFramework": "PlantEnforcemint",
+				"PlantResourceGroups": [
+					"PlantEnforcemint",
+					"PlantShrinkingViolet",
+					"PlantShrinkingVioletAudio",
+					"EmpowermintPlantEffects",
+					"PlantEnforcemintAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantEnforcemint"
+				],
+				"Properties": "RTID(EnforcemintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_ENFORCEMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Enforcemint",
+					"Empowermint"
+				],
+				"IntegerID": 138,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"armamint"
+			],
+			"objdata": {
+				"TypeName": "armamint",
+				"PlantFramework": "PlantArmamint",
+				"PlantResourceGroups": [
+					"PlantArmamint",
+					"PlantArmamintAudio",
+					"PlantCabbagepultAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantArmamint"
+				],
+				"Properties": "RTID(ArmamintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_ARMAMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Armamint",
+					"Empowermint"
+				],
+				"IntegerID": 139,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"concealmint"
+			],
+			"objdata": {
+				"TypeName": "concealmint",
+				"PlantFramework": "PlantConcealmint",
+				"PlantResourceGroups": [
+					"PlantConcealmint",
+					"PlantConcealmintAudio",
+					"PlantGrimrose",
+					"PlantGrimroseAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantConcealmint"
+				],
+				"Properties": "RTID(ConcealmintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_CONCEALMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Concealmint",
+					"Empowermint"
+				],
+				"IntegerID": 140,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"spearmint"
+			],
+			"objdata": {
+				"TypeName": "spearmint",
+				"PlantFramework": "PlantSpearmint",
+				"PlantResourceGroups": [
+					"PlantSpearmint",
+					"PlantSpearmintAudio",
+					"PlantSpikerock",
+					"PlantSpikerockAudio",
+					"PlantCactus",
+					"PlantCactusAudio",
+					"EmpowermintPlantEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSpearmint"
+				],
+				"Properties": "RTID(SpearmintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_SPEARMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"DenyPlantfoodCooldownReset": false,
+				"Premium": true,
+				"Families": [
+					"Spearmint",
+					"Empowermint"
+				],
+				"IntegerID": 141,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"appeasemint"
+			],
+			"objdata": {
+				"TypeName": "appeasemint",
+				"PlantFramework": "PlantAppeasemint",
+				"PlantResourceGroups": [
+					"PlantAppeasemintAudio",
+					"PlantAppeasemint",
+					"EmpowermintPlantEffects",
+					"PlantPeapod",
+					"PeaEffects",
+					"PlantPeashooter"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantAppeasemint"
+				],
+				"Properties": "RTID(AppeasemintDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Empowermint",
+				"PopAnim": "POPANIM_EMPOWERMINTS_PLANT_APPEASEMINT",
+				"SeedChooserBigScale": 1.200000,
+				"SeedChooserBigVerticalOffset": 0.500000,
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"DenyPlantfoodCooldownReset": false,
+				"Families": [
+					"Appeasemint",
+					"Empowermint"
+				],
+				"IntegerID": 145,
+				"CannotBeImitated": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"shadowpeashooter"
+			],
+			"objdata": {
+				"TypeName": "shadowpeashooter",
+				"PlantFramework": "PlantShadowPeashooter",
+				"PlantResourceGroups": [
+					"PlantShadowPeashooterAudio",
+					"PeaEffects",
+					"PlantStalliaEffects",
+					"PlantShadowPeashooter"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantShadowPeashooter"
+				],
+				"Properties": "RTID(ShadowPeashooterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SHADOWPEASHOOTER",
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 2
+				},
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"IntegerID": 142,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"poisonpeashooter"
+			],
+			"objdata": {
+				"TypeName": "poisonpeashooter",
+				"PlantFramework": "PlantPoisonPeashooter",
+				"PlantResourceGroups": [
+					"PlantPoisonPeashooterAudio",
+					"PlantPoisonPeashooter",
+					"PeaEffects",
+					"PlantStalliaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPoisonPeashooter"
+				],
+				"Properties": "RTID(PoisonPeashooterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_GOOPEASHOOTER",
+				"ShadowScale": 0.800000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 2
+				},
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 143,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"slingpea"
+			],
+			"objdata": {
+				"TypeName": "slingpea",
+				"PlantFramework": "PlantArmamintPeashooter",
+				"PlantResourceGroups": [
+					"PlantSlingPea",
+					"PlantAppleMortar",
+					"PlantSlingPeaAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSlingPea"
+				],
+				"Properties": "RTID(SlingPeaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"PopAnim": "POPANIM_PLANT_SLINGPEA",
+				"SeedChooserBigVerticalOffset": 0.480000,
+				"SeedChooserBigScale": 1.150000,
+				"IntegerID": 144,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"snappea"
+			],
+			"objdata": {
+				"TypeName": "snappea",
+				"PlantFramework": "PlantSnapPea",
+				"PlantResourceGroups": [
+					"PlantSnapPea",
+					"PlantSnapPeaAudio",
+					"PlantPeashooter",
+					"PeaEffects",
+					"ZombieTutorialGroup"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSnapPea"
+				],
+				"Properties": "RTID(SnapPeaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_SnapPea",
+				"PopAnim": "POPANIM_PLANT_SNAPPEA",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 147,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"zoybeanpod"
+			],
+			"objdata": {
+				"TypeName": "zoybeanpod",
+				"PlantFramework": "PlantZoybeanPod",
+				"PlantResourceGroups": [
+					"PlantZoybeanPod",
+					"PlantZoybeanPodAudio",
+					"ZombieZoybeanPodGargantuarGroup",
+					"ZombieGargantuarEffects",
+					"ZombieZoybeanPodBasicGroup"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantZoybeanPod"
+				],
+				"Properties": "RTID(ZoybeanPodDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_ZoybeanPod",
+				"PopAnim": "POPANIM_PLANT_ZOYBEANPOD",
+				"SeedChooserBigVerticalOffset": 0.460000,
+				"SeedChooserBigScale": 1.200000,
+				"SeasonsVerticalOffset": -15,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 149,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"dazeychain"
+			],
+			"objdata": {
+				"TypeName": "dazeychain",
+				"PlantFramework": "PlantReincarnation",
+				"PlantResourceGroups": [
+					"PlantReincarnation",
+					"PlantDazeyChainAudio",
+					"PlantStalliaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantReincarnation"
+				],
+				"Properties": "RTID(ReincarnationDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Reincarnation",
+				"PopAnim": "POPANIM_PLANT_DAZEY_CHAIN",
+				"Premium": true,
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 150,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"electricitea"
+			],
+			"objdata": {
+				"TypeName": "electricitea",
+				"PlantFramework": "PlantElectricitea",
+				"PlantResourceGroups": [
+					"PlantElectricitea",
+					"PlantElectricPeashooterEffects",
+					"PlantLightningReedHit",
+					"PlantElectriciteaAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantElectricitea"
+				],
+				"Properties": "RTID(ElectriciteaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Electricitea",
+				"PopAnim": "POPANIM_PLANT_ELECTRICI_TEA",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 152,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"blastberry"
+			],
+			"objdata": {
+				"TypeName": "blastberry",
+				"PlantFramework": "PlantBlastberry",
+				"PlantResourceGroups": [
+					"PlantBlastberry",
+					"PlantBlastBerryAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBlastberry"
+				],
+				"Properties": "RTID(BlastberryDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Blastberry",
+				"PopAnim": "POPANIM_PLANT_VINE_BLASTBERRY",
+				"SeedChooserBigVerticalOffset": 0.420000,
+				"SeedChooserBigHorizontalOffset": -0.100000,
+				"SeedChooserBigScale": 1.200000,
+				"SeasonsVerticalOffset": -20.299999,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 151,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"pokra"
+			],
+			"objdata": {
+				"TypeName": "pokra",
+				"PlantFramework": "PlantPokra",
+				"PlantResourceGroups": [
+					"PlantPokra",
+					"PlantPokraAudio",
+					"PlantStalliaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPokra"
+				],
+				"Properties": "RTID(PokraDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Pokra",
+				"PopAnim": "POPANIM_PLANT_POKRA",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 154,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"imppear"
+			],
+			"objdata": {
+				"TypeName": "imppear",
+				"PlantFramework": "PlantImpPear",
+				"PlantResourceGroups": [
+					"PlantImpPear",
+					"PlantImpPearAudio",
+					"PlantChilibeanGas",
+					"PlantChilibeanAudio",
+					"PlantWitchHazelEffects",
+					"PlantWitchHazelAudio",
+					"ZombieImpPearImpGroup"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantImpPear"
+				],
+				"Properties": "RTID(ImpPearDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"PopAnim": "POPANIM_PLANT_IMPEAR",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 153,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"pumpkin"
+			],
+			"objdata": {
+				"TypeName": "pumpkin",
+				"PlantFramework": "PlantPumpkin",
+				"PlantResourceGroups": [
+					"PlantPumpkin",
+					"PlantPumpkinAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPumpkin"
+				],
+				"Properties": "RTID(PumpkinDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Pumpkin",
+				"PopAnim": "POPANIM_PLANT_PUMPKIN",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeasonsVerticalOffset": -20.299999,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 157,
+				"Families": [
+					"Reinforcemint"
+				],
+				"MasteryType": "health",
+				"Seasons": [
+					"fall"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"pyrevine"
+			],
+			"objdata": {
+				"TypeName": "pyrevine",
+				"PlantFramework": "PlantPyreVine",
+				"PlantResourceGroups": [
+					"PlantPyreVine",
+					"PlantPyreVineAudio",
+					"PlantJackOLantern",
+					"PlantJackOLanternAudio",
+					"EffectsJalapeno"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPyreVine"
+				],
+				"Properties": "RTID(PyreVineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_PyreVine",
+				"PopAnim": "POPANIM_PLANT_VINE_PYRE",
+				"SeedChooserVerticalOffset": 0.800000,
+				"SeedChooserBigVerticalOffset": 0.360000,
+				"SeedChooserBigHorizontalOffset": 0.100000,
+				"SeedChooserBigScale": 1.200000,
+				"SeasonsVerticalOffset": -20.299999,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 156,
+				"Families": [
+					"Peppermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"icebloom"
+			],
+			"objdata": {
+				"TypeName": "icebloom",
+				"PlantFramework": "PlantIceBloom",
+				"PlantResourceGroups": [
+					"PlantIceBloom",
+					"PlantIceBloomAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantIceBloom"
+				],
+				"Properties": "RTID(IceBloomDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_IceBloom",
+				"PopAnim": "POPANIM_PLANT_ICE_BLOOM",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"ShadowScale": 1.200000,
+				"IntegerID": 155,
+				"Families": [
+					"Wintermint"
+				],
+				"Seasons": [
+					"winter"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"dartichoke"
+			],
+			"objdata": {
+				"TypeName": "dartichoke",
+				"PlantFramework": "PlantDartichoke",
+				"PlantResourceGroups": [
+					"PlantDartichoke",
+					"PlantDartichokeAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantDartichoke"
+				],
+				"Properties": "RTID(DartichokeDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Dartichoke",
+				"PopAnim": "POPANIM_PLANT_DARTICHOKE",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"SeedChooserBigScale": 1.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 159,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantTypeUltomato",
+			"aliases": [
+				"ultomato"
+			],
+			"objdata": {
+				"TypeName": "ultomato",
+				"PlantFramework": "PlantUltomato",
+				"PlantResourceGroups": [
+					"PlantUltomato",
+					"PlantUltomatoAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantUltomato"
+				],
+				"Properties": "RTID(UltomatoDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Ultomato",
+				"PopAnim": "POPANIM_PLANT_ULTOMATO",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 158,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"gumnut"
+			],
+			"objdata": {
+				"TypeName": "gumnut",
+				"PlantFramework": "PlantGumnut",
+				"PlantResourceGroups": [
+					"PlantGumnut",
+					"ZombieGumGroup",
+					"PlantGumnutAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGumnut"
+				],
+				"Properties": "RTID(GumnutDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_GUMNUT",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 160,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"shinevine"
+			],
+			"objdata": {
+				"TypeName": "shinevine",
+				"PlantFramework": "PlantShineVine",
+				"PlantResourceGroups": [
+					"PlantShineVine",
+					"PlantShineVineAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantShineVine"
+				],
+				"Properties": "RTID(ShineVineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_ShineVine",
+				"PopAnim": "POPANIM_PLANT_SHINEVINE",
+				"SeedChooserBigVerticalOffset": 0.300000,
+				"SeasonsVerticalOffset": -20.299999,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 161,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"tumbleweed"
+			],
+			"objdata": {
+				"TypeName": "tumbleweed",
+				"PlantFramework": "PlantTumbleweed",
+				"PlantResourceGroups": [
+					"PlantTumbleweed",
+					"PlantTumbleweedAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantTumbleweed"
+				],
+				"Properties": "RTID(TumbleweedDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Tumbleweed",
+				"PopAnim": "POPANIM_PLANT_TUMBLEWEED",
+				"SeedChooserVerticalOffset": 0.800000,
+				"SeedChooserBigVerticalOffset": 0.360000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.200000,
+				"SeasonsVerticalOffset": -25,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 162,
+				"Families": [
+					"Appeasemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"olivepit"
+			],
+			"objdata": {
+				"TypeName": "olivepit",
+				"PlantFramework": "PlantOlivePit",
+				"PlantResourceGroups": [
+					"PlantOlivePit",
+					"PlantOlivePitAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantOlivePit"
+				],
+				"Properties": "RTID(OlivePitDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_OlivePit",
+				"PopAnim": "POPANIM_PLANT_OLIVEPIT",
+				"SeedChooserBigVerticalOffset": 0.200000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 164,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"puffball"
+			],
+			"objdata": {
+				"TypeName": "puffball",
+				"PlantFramework": "PlantPuffball",
+				"PlantResourceGroups": [
+					"PlantPuffball",
+					"PlantPuffballAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPuffball"
+				],
+				"Properties": "RTID(PuffballDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_PUFFBALL",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 163,
+				"Families": [
+					"Ailmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"explodeovine"
+			],
+			"objdata": {
+				"TypeName": "explodeovine",
+				"PlantFramework": "PlantExplodeOVine",
+				"PlantResourceGroups": [
+					"PlantExplodeOVine",
+					"PlantExplodeOVineAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantExplodeOVine"
+				],
+				"Properties": "RTID(ExplodeOVineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_ExplodeOVine",
+				"PopAnim": "POPANIM_PLANT_EXPLODEOVINE",
+				"SeedChooserBigVerticalOffset": 0.220000,
+				"SeasonsVerticalOffset": -20.299999,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 166,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"murkadamia"
+			],
+			"objdata": {
+				"TypeName": "murkadamia",
+				"PlantFramework": "PlantMurkadamia",
+				"PlantResourceGroups": [
+					"PlantMurkadamia",
+					"PlantMurkadamiaNutAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantMurkadamia"
+				],
+				"Properties": "RTID(MurkadamiaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Murkadamia",
+				"PopAnim": "POPANIM_PLANT_MURKADAMIA_NUT",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.250000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 165,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"turkeypult"
+			],
+			"objdata": {
+				"TypeName": "turkeypult",
+				"PlantFramework": "PlantTurkeypult",
+				"PlantResourceGroups": [
+					"PlantTurkeypult",
+					"PlantTurkeypultAudio",
+					"PlantCabbagepult"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantTurkeypult"
+				],
+				"Properties": "RTID(TurkeypultDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Turkeypult",
+				"PopAnim": "POPANIM_PLANT_TURKEYPULT",
+				"SeedChooserBigVerticalOffset": 0.460000,
+				"SeedChooserBigScale": 1.200000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 167,
+				"Families": [
+					"Armamint"
+				],
+				"Seasons": [
+					"fall"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"headbutter"
+			],
+			"objdata": {
+				"TypeName": "headbutter",
+				"PlantFramework": "PlantHeadbutterLettuce",
+				"PlantResourceGroups": [
+					"PlantHeadbutter",
+					"PlantHeadbutterAudio",
+					"PlantKernelpult",
+					"PlantKernelpultAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHeadbutter"
+				],
+				"Properties": "RTID(HeadbutterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HeadbutterLettuce",
+				"PopAnim": "POPANIM_PLANT_HEADBUTTER_LETTUCE",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 168,
+				"Families": [
+					"Enforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"boingsetta"
+			],
+			"objdata": {
+				"TypeName": "boingsetta",
+				"PlantFramework": "PlantBoingsetta",
+				"PlantResourceGroups": [
+					"PlantBoingsetta"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBoingsetta"
+				],
+				"Properties": "RTID(BoingsettaDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Boingsetta",
+				"PopAnim": "POPANIM_PLANT_BOINGSETTA",
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 169,
+				"Families": [
+					"Wintermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"stickybombrice"
+			],
+			"objdata": {
+				"TypeName": "stickybombrice",
+				"PlantFramework": "PlantStickybombRice",
+				"PlantResourceGroups": [
+					"PlantStickybombRice",
+					"PlantStickyBombRiceAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantStickybombRice"
+				],
+				"Properties": "RTID(StickybombRiceDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_StickybombRice",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"PopAnim": "POPANIM_PLANT_STICKYBOMB_RICE",
+				"SeedChooserBigVerticalOffset": 0.480000,
+				"SeedChooserBigScale": 1.150000,
+				"IntegerID": 170,
+				"Families": [
+					"Armamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"hocus"
+			],
+			"objdata": {
+				"TypeName": "hocus",
+				"PlantFramework": "PlantHocusCrocus",
+				"PlantResourceGroups": [
+					"PlantHocusCrocus",
+					"PlantHocusCrocusAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHocusCrocus"
+				],
+				"Properties": "RTID(HocusCrocusDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HocusCrocus",
+				"PopAnim": "POPANIM_PLANT_HOCUS_CROCUS",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 171,
+				"Families": [
+					"Enchantmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"gloomvine"
+			],
+			"objdata": {
+				"TypeName": "gloomvine",
+				"PlantFramework": "PlantGloomVine",
+				"PlantResourceGroups": [
+					"PlantGloomvine",
+					"PlantMoonFlowerEffects",
+					"PlantGloomvineAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantGloomvine"
+				],
+				"Properties": "RTID(GloomVineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_GloomVine",
+				"PopAnim": "POPANIM_PLANT_GLOOMVINE",
+				"SeedChooserBigVerticalOffset": 0.220000,
+				"SeasonsVerticalOffset": -20.299999,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 172,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"draftodil"
+			],
+			"objdata": {
+				"TypeName": "draftodil",
+				"PlantFramework": "PlantDraftodil",
+				"PlantResourceGroups": [
+					"PlantDraftodil",
+					"PlantDraftodilAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantDraftodil"
+				],
+				"Properties": "RTID(DraftodilDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_DRAFTODIL",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.450000,
+				"SeedChooserBigHorizontalOffset": 0,
+				"SeedChooserBigScale": 1.300000,
+				"IntegerID": 173,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"boomflower"
+			],
+			"objdata": {
+				"TypeName": "boomflower",
+				"PlantFramework": "PlantBoomFlower",
+				"PlantResourceGroups": [
+					"PlantBoomBalloon",
+					"PlantBoomBalloonAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBoomBalloon"
+				],
+				"Properties": "RTID(BoomFlowerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_BoomFlower",
+				"PopAnim": "POPANIM_PLANT_BOOMBALLOON",
+				"SeedChooserBigVerticalOffset": 0.400000,
+				"SeedChooserBigScale": 1.300000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 174,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"pvine"
+			],
+			"objdata": {
+				"TypeName": "pvine",
+				"PlantFramework": "PlantPvine",
+				"PlantResourceGroups": [
+					"PlantPVine",
+					"PlantPVineAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPVine"
+				],
+				"Properties": "RTID(PvineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Pvine",
+				"PopAnim": "POPANIM_PLANT_PVINE",
+				"SeedChooserBigVerticalOffset": 0.240000,
+				"Families": [
+					"Appeasemint"
+				],
+				"MasteryType": "piercing",
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 175,
+				"Premium": true
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"inferno"
+			],
+			"objdata": {
+				"TypeName": "inferno",
+				"PlantFramework": "PlantInferno",
+				"PlantResourceGroups": [
+					"PlantInferno",
+					"PlantInfernoAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantInferno"
+				],
+				"Properties": "RTID(InfernoDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_INFERNO",
+				"SeedChooserVerticalOffset": 0.200000,
+				"SeedChooserBigVerticalOffset": 0.200000,
+				"SeasonsVerticalOffset": -55,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 176,
+				"Families": [
+					"Peppermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"solarsage"
+			],
+			"objdata": {
+				"TypeName": "solarsage",
+				"PlantFramework": "PlantSolarSage",
+				"PlantResourceGroups": [
+					"PlantSolarSage",
+					"PlantSolarSageAudio",
+					"ZombieSolarSage"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSolarSage"
+				],
+				"Properties": "RTID(SolarSageDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SOLARSAGE",
+				"MasteryType": "piercing",
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"IntegerID": 177,
+				"Families": [
+					"Enlightenmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"powervine"
+			],
+			"objdata": {
+				"TypeName": "powervine",
+				"PlantFramework": "PlantPowerVine",
+				"Properties": "RTID(PowerVineDefault@PlantProperties)",
+				"PlantResourceGroups": [
+					"PlantPowerVine",
+					"PlantPowerVineAudio",
+					"PlantEMPeaBurstEffect"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPowerVine"
+				],
+				"PopAnim": "POPANIM_PLANT_POWERVINE",
+				"AnimRigClass": "PlantAnimRig_PowerVine",
+				"SeedChooserBigVerticalOffset": 0.220000,
+				"SeasonsVerticalOffset": -20.299999,
+				"AlmanacBackdropName": "warp",
+				"Premium": true,
+				"IntegerID": 178,
+				"Families": [
+					"Filamint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"noctarine"
+			],
+			"objdata": {
+				"TypeName": "noctarine",
+				"PlantFramework": "PlantNoctarine",
+				"PlantResourceGroups": [
+					"PlantNoctarine",
+					"PlantStalliaEffects",
+					"PlantMoonFlowerEffects",
+					"PlantNoctarineAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantNoctarine"
+				],
+				"Properties": "RTID(NoctarineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Noctarine",
+				"PopAnim": "POPANIM_PLANT_NOCTARINE",
+				"Premium": true,
+				"SeedChooserBigVerticalOffset": 0.420000,
+				"SeedChooserBigHorizontalOffset": 0.030000,
+				"SeedChooserBigScale": 1.200000,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 179,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"heathseeker"
+			],
+			"objdata": {
+				"TypeName": "heathseeker",
+				"PlantFramework": "PlantHeathSeeker",
+				"PlantResourceGroups": [
+					"PlantHeathSeeker",
+					"PlantHeathSeekerAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHeathSeeker"
+				],
+				"Properties": "RTID(HeathSeekerDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HeathSeeker",
+				"PopAnim": "POPANIM_PLANT_HEATHSEEKER",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.450000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.250000,
+				"IntegerID": 181,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"iceweed"
+			],
+			"objdata": {
+				"TypeName": "iceweed",
+				"PlantFramework": "PlantIceweed",
+				"PlantResourceGroups": [
+					"PlantIceweed",
+					"PlantIceweedAudio",
+					"PlantIceburgAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantIceweed"
+				],
+				"Properties": "RTID(IceweedDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Iceweed",
+				"PopAnim": "POPANIM_PLANT_ICEWEED",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.200000,
+				"ShadowOffset": {
+					"x": 0,
+					"y": 20
+				},
+				"IntegerID": 182,
+				"Families": [
+					"Wintermint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"tigergrass"
+			],
+			"objdata": {
+				"TypeName": "tigergrass",
+				"PlantFramework": "PlantTigerGrass",
+				"PlantResourceGroups": [
+					"PlantTigerGrass",
+					"PlantTigerGrassAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantTigerGrass"
+				],
+				"Properties": "RTID(TigerGrassDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_TigerGrass",
+				"PopAnim": "POPANIM_PLANT_TIGER_GRASS",
+				"SeedChooserVerticalOffset": 0.750000,
+				"SeedChooserBigVerticalOffset": 0.600000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.150000,
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 183,
+				"Families": [
+					"Enforcemint"
+				],
+				"Seasons": [
+					"spring"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"teleportatomine"
+			],
+			"objdata": {
+				"TypeName": "teleportatomine",
+				"PlantFramework": "PlantTeleportatoMine",
+				"PlantResourceGroups": [
+					"PlantTeleportatoMine",
+					"PlantPrimalPotatomineExplosion",
+					"PlantTeleportatoMineAudio",
+					"ZombieWrapEffect"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantTeleportatoMine"
+				],
+				"Properties": "RTID(TeleportatoMineDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_TeleportatoMine",
+				"PopAnim": "POPANIM_PLANT_TELEPORTATO",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.450000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.250000,
+				"IntegerID": 184,
+				"Families": [
+					"Bombardmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"blockoli"
+			],
+			"objdata": {
+				"TypeName": "blockoli",
+				"PlantFramework": "PlantBlockoli",
+				"PlantResourceGroups": [
+					"PlantBlockoli",
+					"PlantBlockoliAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBlockoli"
+				],
+				"Properties": "RTID(BlockoliDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Blockoli",
+				"PopAnim": "POPANIM_PLANT_BLOCKOLI",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.360000,
+				"SeedChooserBigHorizontalOffset": -0.100000,
+				"SeedChooserBigScale": 1.350000,
+				"IntegerID": 186,
+				"Families": [
+					"Reinforcemint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"buttercup"
+			],
+			"objdata": {
+				"TypeName": "buttercup",
+				"PlantFramework": "PlantButtercup",
+				"PlantResourceGroups": [
+					"PlantButtercup",
+					"PlantKernelpult",
+					"PlantButtercupAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantButtercup"
+				],
+				"Properties": "RTID(ButtercupDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Buttercup",
+				"PopAnim": "POPANIM_PLANT_BUTTERCUP",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.450000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.250000,
+				"IntegerID": 185,
+				"Families": [
+					"Containmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"bramblebush"
+			],
+			"objdata": {
+				"TypeName": "bramblebush",
+				"PlantFramework": "PlantBrambleBush",
+				"PlantResourceGroups": [
+					"PlantBrambleBush",
+					"PlantBrambleBushAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantBrambleBush"
+				],
+				"Properties": "RTID(BrambleBushDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_BrambleBush",
+				"PopAnim": "POPANIM_PLANT_BRAMBLEBUSH",
+				"Premium": true,
+				"HasStoreShadow": false,
+				"AlmanacBackdropName": "warp",
+				"SeedChooserBigVerticalOffset": 0.330000,
+				"SeedChooserBigHorizontalOffset": 0.020000,
+				"SeedChooserBigScale": 1.300000,
+				"IntegerID": 187,
+				"Families": [
+					"Spearmint"
+				]
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sprout"
+			],
+			"objdata": {
+				"TypeName": "sprout",
+				"PlantFramework": "PlantSprout",
+				"PlantResourceGroups": [
+					"PlantSprout",
+					"PlantSproutAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSprout"
+				],
+				"Properties": "RTID(SproutDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_SPROUT",
+				"IntegerID": 75,
+				"Enabled": false
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sunpod"
+			],
+			"objdata": {
+				"TypeName": "sunpod",
+				"PlantFramework": "PlantSunpod",
+				"PlantResourceGroups": [
+					"PlantSunpod",
+					"PlantSunPodAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSunpod"
+				],
+				"Properties": "RTID(SunpodDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_Sunpod",
+				"PopAnim": "POPANIM_PLANT_SUNPOD",
+				"HomeWorld": "lostcity",
+				"IntegerID": 77,
+				"Enabled": false
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"sungun"
+			],
+			"objdata": {
+				"TypeName": "sungun",
+				"PlantFramework": "PlantSunGun",
+				"PlantResourceGroups": [
+					"PlantSunGun",
+					"PlantSunGunAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantSunGun"
+				],
+				"Properties": "RTID(SunGunDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_SunGun",
+				"PopAnim": "POPANIM_PLANT_AKEESUNGUN",
+				"HomeWorld": "lostcity",
+				"IntegerID": 80,
+				"Enabled": false
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"hollyshield"
+			],
+			"objdata": {
+				"TypeName": "hollybarrierleaf",
+				"PlantFramework": "HollyBarrierLeaf",
+				"PlantResourceGroups": [
+					"PlantHolly",
+					"PlantHollyAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHolly"
+				],
+				"Properties": "RTID(HollyShieldDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HollyBarrierLeaf",
+				"PopAnim": "POPANIM_EFFECTS_HOLLY_PROJECTILE",
+				"IntegerID": 127,
+				"Enabled": false
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"hollybarrierleafplantfood"
+			],
+			"objdata": {
+				"TypeName": "hollybarrierleafplantfood",
+				"PlantFramework": "HollyBarrierLeaf",
+				"PlantResourceGroups": [
+					"PlantHolly",
+					"PlantHollyAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantHolly"
+				],
+				"Properties": "RTID(HollyShieldPlantfood@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_HollyBarrierLeaf",
+				"PopAnim": "POPANIM_EFFECTS_HOLLY_PROJECTILE",
+				"IntegerID": 128,
+				"Enabled": false
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"minipeashooter"
+			],
+			"objdata": {
+				"TypeName": "minipeashooter",
+				"PlantFramework": "PlantMiniPeashooter",
+				"PlantResourceGroups": [
+					"PlantPeashooter",
+					"PlantPeashooterAudio",
+					"PeaEffects"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantPeashooter"
+				],
+				"Properties": "RTID(MiniPeashooterDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_PEASHOOTER",
+				"Premium": true,
+				"AlmanacBackdropName": "warp",
+				"Families": [
+					"Appeasemint"
+				],
+				"IntegerID": 146,
+				"Enabled": false
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"burnade"
+			],
+			"objdata": {
+				"TypeName": "burnade",
+				"PlantFramework": "PlantBurnade",
+				"PlantResourceGroups": [
+					"PlantIceburg",
+					"PlantIceburgAudio",
+					"PlantCherryBomb",
+					"PlantCherryBombAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantIceburg",
+					"PlantCherryBomb"
+				],
+				"Properties": "RTID(BurnadeDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig",
+				"PopAnim": "POPANIM_PLANT_ICEBURG",
+				"Premium": true,
+				"SeedChooserBigVerticalOffset": 0.340000,
+				"ShadowScale": 0.700000,
+				"AlmanacBackdropName": "warp",
+				"IntegerID": 148,
+				"Enabled": false
+			}
+		},
+		{
+			"objclass": "PlantType",
+			"aliases": [
+				"noctarinecloud"
+			],
+			"objdata": {
+				"TypeName": "noctarinecloud",
+				"PlantFramework": "PlantNoctarineCloud",
+				"PlantResourceGroups": [
+					"PlantNoctarine",
+					"PlantStalliaEffects",
+					"PlantMoonFlowerEffects",
+					"PlantNoctarineAudio"
+				],
+				"PlantPreviewResourceGroups": [
+					"PlantNoctarine"
+				],
+				"Properties": "RTID(NoctarineCloudDefault@PlantProperties)",
+				"AnimRigClass": "PlantAnimRig_NoctarineCloud",
+				"PopAnim": "POPANIM_EFFECTS_NOCTARINE_CLOUD",
+				"AlmanacBackdropName": "warp",
+				"Enabled": false,
+				"IntegerID": 180,
+				"Families": [
+					"Concealmint"
+				]
+			}
+		}
+	]
+}
