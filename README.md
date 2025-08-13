@@ -8,7 +8,7 @@
 
 # What is this?
 
-An expanded library for PvZ2 (9.6.1), based on Brekko's ExampleMod. I want it to be fully open sourced and public. My main goal is to softcode and expand vanilla entities via reflection system, which adds new properties to packages. It's currently in development, and no ARM64 version is available at the moment. Stable libraries are available at the `Release` tab
+An expanded library for PvZ2 (9.6.1), based on Brekko's ExampleMod. I want it to be fully open sourced and public. My main goal is to softcode and expand vanilla entities via reflection system, which adds new properties to packages. It's currently in development, and no ARM64 version is available at the moment. Stable libraries are available at the `Release` section
 
 # Current Features
 * IntegerID backport! - Plant/Zombie types now support id mapping, which will help modders who dont want to constantly update the apk.
