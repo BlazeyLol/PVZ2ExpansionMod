@@ -20,7 +20,7 @@ namespace Sexy
 		int mAtlastEndY;
 	};
 
-#if A32
+#ifdef A32
 	static_assert(sizeof(Image) == 0x58);
 	static_assert(offsetof(Image, mFilePath) == 0x24);
 	static_assert(offsetof(Image, mAtlastStartY) == 0x4C);

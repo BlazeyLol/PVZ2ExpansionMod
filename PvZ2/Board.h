@@ -143,7 +143,7 @@ public:
 	char pad400[0x190];
 };
 
-#if A32
+#ifdef A32
 static_assert(sizeof(Board) == 0x590);
 static_assert(offsetof(Board, m_boardRegions) == 0xE0);
 static_assert(offsetof(Board, m_cellLocked) == 0x228);

@@ -23,7 +23,7 @@ int64_t getWeakPtr(int64_t addr) {
 	return (int64_t)a.Get();
 }
 
-#if A32
+#ifdef A32
 
 void loadResGroup(const SexyString& groupName)
 {

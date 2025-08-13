@@ -80,7 +80,7 @@ public:
 	float MasteryResistancePiercing;
 };
 
-#if A32
+#ifdef A32
 static_assert(sizeof(PlantPropertySheet) == 0x140);
 static_assert(offsetof(PlantPropertySheet, PlantGridType) == 0x60);
 static_assert(offsetof(PlantPropertySheet, ArtCenter) == 0x98);

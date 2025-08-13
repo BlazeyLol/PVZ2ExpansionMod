@@ -68,7 +68,7 @@ public:
 	std::vector<std::vector<SexyString>> PerksDisabledPerDifficulty;
 };
 
-#if A32
+#ifdef A32
 static_assert(sizeof(LevelDefinition) == 0x278);
 static_assert(offsetof(LevelDefinition, FirstRewardType) == 0xA4);
 static_assert(offsetof(LevelDefinition, StartingSun) == 0x40);

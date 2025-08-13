@@ -80,7 +80,7 @@ public:
 	}
 };
 
-#if A32
+#ifdef A32
 static_assert(offsetof(Plant, m_type) == 0xE0);
 static_assert(offsetof(Plant, m_conditionTracker) == 0x160);
 static_assert(sizeof(Plant) == 0x1E8);

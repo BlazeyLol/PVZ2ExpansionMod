@@ -27,7 +27,6 @@ public:
 	std::vector<SexyString> PlantFrostExcludelist;
 	std::vector<SexyString> ProtectThePlantAdditionalPlantingExcludelist;
 	std::vector<SexyString> PlantSmashAttackExcludelist;
-	int unk;
 
 	// new stuff
 	std::vector<SexyString> ZombiePianoList;
@@ -38,6 +37,7 @@ public:
 	static void buildSymbols(Reflection::CRefManualSymbolBuilder* builder, Reflection::RClass* rclass)
 	{
 		oBoardPropertySheetBuildSymbols(builder, rclass);
+		LOGI("Building symbols for BoardPropertySheet");
 		REGISTER_STRING_VECTOR_PROPERTY(builder, rclass, BoardPropertySheet, ZombiePianoList);
 	}
 };

@@ -15,7 +15,6 @@ public:
 	std::vector<uint8_t> m_conditionFlags;
 	std::vector<EntityCondition> m_conditions;
 
-public:
 	virtual void Function0() {};
 	virtual void Function1() {};
 	virtual void Function2() {};
@@ -23,6 +22,7 @@ public:
 };
 
 class GridItemConditionTracker : public EntityConditionTracker
-{
+{};
 
-};
+class ZombieConditionTracker : public EntityConditionTracker
+{};

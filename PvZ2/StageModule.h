@@ -44,7 +44,7 @@ public:
 	StageModuleProperties* GetProps();
 };
 
-#if A32
+#ifdef A32
 static_assert(sizeof(StageModule) == 0x90);
 static_assert(offsetof(StageModule, m_musicTriggerOverride) == 0x1C);
 static_assert(offsetof(StageModule, m_suppressMusicStateChangeEvents) == 0x3C);

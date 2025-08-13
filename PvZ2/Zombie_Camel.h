@@ -14,15 +14,9 @@ public:
 		tail
 	};
 
+	// there are more fields
+	// but they are useless
 	ZombieCamelSegmentType m_camelType;
-
-	// unsure of the order
-	// the fields may be useless
-	bool m_isACamel;
-	bool m_tooCloseToPrev;
-	bool m_tooFarFromNext;
-	int m_signDamageIndex;
-	bool m_spawnDeathAnim;
 };
 
 class ZombieCamelProps : public ZombiePropertySheet
@@ -57,7 +51,7 @@ public:
 	}
 };
 
-#if A32
+#ifdef A32
 static_assert(offsetof(ZombieCamelProps, CamelSegmentOffset) == 0x198);
 static_assert(offsetof(ZombieCamelProps, SpawnManyCamelSegmentAtPosition) == 0x1A8);
 static_assert(offsetof(ZombieCamelProps, SurprisedTime) == 0x1B0);

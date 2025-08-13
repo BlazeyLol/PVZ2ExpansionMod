@@ -9,8 +9,8 @@ public:
 
 	SexyString CollectableType = "plantfood";
 	int CollectableCount = 1;
-	//char pad[16];
-	//float CollectableOffsetY;
+	char pad[16];
+	float CollectableOffsetY;
 
 	static Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc oPowerLilyPropsBuildSymbols;
 

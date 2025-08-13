@@ -49,7 +49,7 @@ std::vector<ZombieType*> g_modZombieTypenames;
     g_modZombieTypenames.push_back(typename); \
 
 typedef void* (*plantTypeCtor)(PlantType*);
-plantTypeCtor oPlantTypeCtor = NULL;
+plantTypeCtor oPlantTypeCtor = nullptr;
 
 void* hkPlantTypeCtor(PlantType* self)
 {
@@ -58,7 +58,7 @@ void* hkPlantTypeCtor(PlantType* self)
 }
 
 typedef PlantNameMapper* (*PlantNameMapperCtor)(PlantNameMapper*);
-PlantNameMapperCtor oPlantNameMapperCtor = NULL;
+PlantNameMapperCtor oPlantNameMapperCtor = nullptr;
 
 void* hkCreatePlantNameMapper(PlantNameMapper* self)
 {
@@ -76,7 +76,7 @@ void* hkCreatePlantNameMapper(PlantNameMapper* self)
 }
 
 typedef void* (*zombieTypeCtor)(ZombieType*);
-zombieTypeCtor oZombieTypeCtor = NULL;
+zombieTypeCtor oZombieTypeCtor = nullptr;
 
 void* hkZombieTypeCtor(ZombieType* self)
 {
@@ -85,7 +85,7 @@ void* hkZombieTypeCtor(ZombieType* self)
 }
 
 typedef ZombieAlmanac* (*ZombieAlmanacCtor)(ZombieAlmanac*);
-ZombieAlmanacCtor oZombieAlmanacCtor = NULL;
+ZombieAlmanacCtor oZombieAlmanacCtor = nullptr;
 
 void* hkCreateZombieTypenameMap(ZombieAlmanac* self)
 {
@@ -177,8 +177,8 @@ Board* getBoard() {
 
 #pragma region Build Symbol Funcs
 
-Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc PlantType::oPlantTypeBuildSymbols = NULL;
-Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc ZombieType::oZombieTypeBuildSymbols = NULL;
+Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc PlantType::oPlantTypeBuildSymbols = nullptr;
+Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc ZombieType::oZombieTypeBuildSymbols = nullptr;
 
 #pragma endregion
 
@@ -238,8 +238,7 @@ void libPVZ2ExpansionMod_main()
 
     // feature inits
     PowerLilyProps::modInit();
-
-    //BoardPropertySheet::modInit();
+    BoardPropertySheet::modInit();
 
     //ZombieCamel::modInit();
     //ZombieEightiesArcadeProps::modInit();

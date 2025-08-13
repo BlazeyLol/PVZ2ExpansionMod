@@ -7,7 +7,7 @@ public:
 	SexyString TypeName;
 };
 
-#if A32
+#ifdef A32
 static_assert(offsetof(ObjectTypeDescriptor, TypeName) == 0x4);
 #else
 static_assert(offsetof(ObjectTypeDescriptor, TypeName) == 0x8);

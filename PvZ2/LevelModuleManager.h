@@ -36,7 +36,7 @@ public:
 	LevelModule* getModule(Sexy::RtClass* rtClass);
 };
 
-#if A32
+#ifdef A32
 static_assert(sizeof(LevelModuleManager) == 0x168);
 static_assert(offsetof(LevelModuleManager, unkEvent12) == 0xF4);
 #else

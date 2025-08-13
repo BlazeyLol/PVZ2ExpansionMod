@@ -1,20 +1,31 @@
 #include "BoardPropertySheet.h"
 
-typedef void* (*boardPropertySheetCtor)(BoardPropertySheet*);
-boardPropertySheetCtor oBoardPropertySheetCtor = NULL;
+BoardPropertySheet* g_boardPropertySheet = nullptr;
 
-BoardPropertySheet* g_boardProperties = NULL;
+typedef void* (*boardPropertySheetCtor)(BoardPropertySheet*);
+boardPropertySheetCtor oBoardPropertySheetCtor = nullptr;
 
 void* hkBoardPropertySheetCtor(BoardPropertySheet* self)
 {
+    LOGI("Board propsheet ctor");
     oBoardPropertySheetCtor(self);
+
+    self->ZombiePianoList.clear();
+    self->ZombiePianoList.shrink_to_fit();
+
+    if (!g_boardPropertySheet)
+    {
+        LOGI("g_boardPropertySheet is null!");
+        g_boardPropertySheet = self;
+    }
+
     return self;
 }
 
 typedef bool (*initZombiePianoList)(int, int);
-initZombiePianoList oInitZombiePianoList = NULL;
+initZombiePianoList oInitZombiePianoList = nullptr;
 
-std::vector<SexyString>* g_pianoList = NULL;
+std::vector<SexyString>* g_pianoList = nullptr;
 bool g_pianoListInitialized = false;
 
 bool hkInitZombiePianoList(int a1, int a2)
@@ -28,39 +39,27 @@ bool hkInitZombiePianoList(int a1, int a2)
         uint ptrAddr = getActualOffset(0x1D890F4); // address of piano zombie's list in memory
         g_pianoList = reinterpret_cast<std::vector<SexyString>*>(ptrAddr);
 
-        //g_pianoList->clear();
-        //g_pianoList = &g_boardProperties->ZombiePianoList;
-        for (size_t iter = 0; iter < g_boardProperties->ZombiePianoList.size(); iter++)
+        g_pianoList->clear();
+        for (size_t iter = 0; iter < g_boardPropertySheet->ZombiePianoList.size(); iter++)
         {
-            //g_pianoList->push_back(str);
-            SexyString zombieTypename = g_boardProperties->ZombiePianoList[iter];
+            SexyString zombieTypename = g_boardPropertySheet->ZombiePianoList[iter];
+            g_pianoList->push_back(zombieTypename);
             LOGI("ZombiePianoList typename: %s", zombieTypename.c_str());
         }
-
-        //LOGI("ZombiePianoList size: %d", g_boardProperties->ZombiePianoList.size());
-
-        g_pianoList->clear();
-        g_pianoList->push_back("cowboy");
-        g_pianoList->push_back("cowboy_armor1");
-        g_pianoList->push_back("cowboy_armor2");
-        g_pianoList->push_back("cowboy_armor4");
-        g_pianoList->push_back("feastivus");
 
         g_pianoListInitialized = true;
     }
     return oInitZombiePianoList(a1, a2);
 }
 
-Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc BoardPropertySheet::oBoardPropertySheetBuildSymbols = NULL;
+Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc BoardPropertySheet::oBoardPropertySheetBuildSymbols = nullptr;
 
 void BoardPropertySheet::modInit()
 {
-    LOGI("BoardPropertySheet mod init");
+    LOGI("Initializing BoardPropertySheet");
 
     PVZ2HookFunction(0xD98368, (void*)BoardPropertySheet::buildSymbols, (void**)&oBoardPropertySheetBuildSymbols);
     PVZ2HookFunction(0xD982A8, (void*)hkBoardPropertySheetCtor, (void**)&oBoardPropertySheetCtor);
 
     PVZ2HookFunction(0x885F80, (void*)hkInitZombiePianoList, (void**)&oInitZombiePianoList);
-
-    LOGI("BoardPropertySheet finish init");
 }

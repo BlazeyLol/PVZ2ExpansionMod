@@ -4,6 +4,7 @@
 #include "EntityConditions.h"
 #include "Plant.h"
 #include "ZombieType.h"
+#include "ZombieAnimRig.h"
 
 #define ZOMBIE_VFUNC_COUNT 204
 
@@ -23,7 +24,7 @@ public:
 	float m_helmHitpoints;
 	char pad_006C[12];
 	Sexy::RtWeakPtr<ZombieType> m_type;
-	Sexy::RtWeakPtr<void> m_animRig;
+	Sexy::RtWeakPtr<ZombieAnimRig> m_animRig;
 	char pad_0088[88];
 	double m_elapsedTimeInState;
 	float m_stateMachineTimeScale;
@@ -59,7 +60,7 @@ public:
 	struct SexyVector2 m_stormTargetLocation;
 	int32_t m_stormType;
 	std::vector<Sexy::RtWeakPtr<void>> m_armor;
-	EntityConditionTracker m_conditionTracker;
+	ZombieConditionTracker m_conditionTracker;
 	int trackerPad[21];
 	char pad_0210[190];
 	std::vector<int> m_familyResistances;
@@ -238,7 +239,7 @@ public:
 	virtual void PlaySoundOnEat() {}
 };
 
-#if A32
+#ifdef A32
 static_assert(offsetof(Zombie, m_conditionTracker) == 0x1A0);
 static_assert(offsetof(Zombie, pad_0210) == 0x210);
 #else
