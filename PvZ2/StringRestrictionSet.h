@@ -30,3 +30,8 @@ class GridItemRestrictionSet : public StringRestrictionSet
 public:
 
 };
+
+class ZombieRestrictionSet : public StringRestrictionSet
+{
+public:
+};

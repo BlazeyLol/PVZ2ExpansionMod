@@ -18,4 +18,7 @@ public:
 	SexyString IconText;
 };
 
+#if A32
 static_assert(sizeof(LevelModuleProperties) == 0x48); // 0x50 is the true size
+#else
+#endif

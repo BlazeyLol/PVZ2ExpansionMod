@@ -4,6 +4,12 @@
 #include <stdio.h>
 #include "Logging.h"
 
+#ifdef __arm__
+#define A32
+#elif defined __aarch64__
+#define A64
+#endif
+
 #define LOG_RETURN_ADDRESS(level) \
 LOGI("%p", (uintptr_t)__builtin_return_address(level) - g_libAddress);
 
@@ -13,7 +19,7 @@ uint getLibraryAddress(const char* libName);
 // Get actual offset of address inside libPVZ2.so
 uint getActualOffset(uint offset);
 // Hook a function in libPVZ2
-void FluffyHookFunction(uint offset, void* replace, void** result);
+void PVZ2HookFunction(uint offset, void* replace, void** result);
 
 void* copyVFTable(int vftableAddr, int numVFuncs);
 

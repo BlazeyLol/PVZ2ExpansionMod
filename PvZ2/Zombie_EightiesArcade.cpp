@@ -47,8 +47,8 @@ void ZombieEightiesArcadeProps::modInit()
 {
     LOGI("EightiesArcade mod init");
 
-    FluffyHookFunction(0x79898C, (void*)hkArcadeZombiePushGridItem, (void**)&oArcadeZombiePushGridItem);
-    FluffyHookFunction(0x79898C, (void*)ZombieEightiesArcadeProps::buildSymbols, (void**)&ZombieEightiesArcadeProps::oZombieEightiesArcadePropsBuildSymbols);
+    PVZ2HookFunction(0x79898C, (void*)hkArcadeZombiePushGridItem, (void**)&oArcadeZombiePushGridItem);
+    PVZ2HookFunction(0x79898C, (void*)ZombieEightiesArcadeProps::buildSymbols, (void**)&ZombieEightiesArcadeProps::oZombieEightiesArcadePropsBuildSymbols);
 
     LOGI("EightiesArcade finish init");
 }

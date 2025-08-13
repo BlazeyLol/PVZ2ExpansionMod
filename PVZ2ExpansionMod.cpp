@@ -9,6 +9,7 @@
 #include <Sexy/SexyApp.h>
 
 #include "PvZ2/Board.h"
+#include "PvZ2/BoardPropertySheet.h"
 #include "PvZ2/PlantType.h"
 #include "PvZ2/WorldMap.h"
 #include "PvZ2/ZombieType.h"
@@ -37,6 +38,7 @@ public:
 };
 
 // used for the custom id system
+// can be used for typename list for restriction sets
 std::vector<PlantType*> g_modPlantTypenames;
 std::vector<ZombieType*> g_modZombieTypenames;
 
@@ -60,16 +62,17 @@ PlantNameMapperCtor oPlantNameMapperCtor = NULL;
 
 void* hkCreatePlantNameMapper(PlantNameMapper* self)
 {
-    PlantNameMapper* obj = oPlantNameMapperCtor(self);
-    obj->m_aliasToId.clear();
+    oPlantNameMapperCtor(self);
+    self->m_aliasToId.clear();
 
     for (size_t iter = 0; iter < g_modPlantTypenames.size(); iter++)
     {
         PlantType* type = g_modPlantTypenames[iter];
-        obj->m_aliasToId[type->TypeName] = type->IntegerID;
+        self->m_aliasToId[type->TypeName] = type->IntegerID;
+        //LOGI("Registered plant typename %s with ID %d", type->TypeName.c_str(), type->IntegerID);
     }
 
-    return obj;
+    return self;
 }
 
 typedef void* (*zombieTypeCtor)(ZombieType*);
@@ -86,24 +89,31 @@ ZombieAlmanacCtor oZombieAlmanacCtor = NULL;
 
 void* hkCreateZombieTypenameMap(ZombieAlmanac* self)
 {
-    ZombieAlmanac* obj = oZombieAlmanacCtor(self);
-    obj->m_aliasToId.clear();
+    oZombieAlmanacCtor(self);
+    self->m_aliasToId.clear();
 
     for (size_t iter = 0; iter < g_modZombieTypenames.size(); iter++)
     {
         auto* type = g_modZombieTypenames[iter];
-        obj->m_aliasToId[type->TypeName] = type->IntegerID;
+        self->m_aliasToId[type->TypeName] = type->IntegerID;
+        //LOGI("Registered zombie typename %s with ID %d", type->TypeName.c_str(), type->IntegerID);
     }
 
-    return obj;
+    return self;
 }
 
 #pragma endregion
 
 #pragma region Mummy Memory Fix
 
+#ifdef A32
+#define CAMEL_MINIGAME_MODULE_FUNC 0x78CFA0
+#else
+#define CAMEL_MINIGAME_MODULE_FUNC 0xB1BE04
+#endif
+
 typedef void(*camelMinigameModuleFunc)(int, int, int);
-camelMinigameModuleFunc cmmFunc = (camelMinigameModuleFunc)getActualOffset(0x78CFA0);
+camelMinigameModuleFunc cmmFunc = (camelMinigameModuleFunc)getActualOffset(CAMEL_MINIGAME_MODULE_FUNC);
 
 void hkCamelZombieFunc(int a1, int a2, int a3)
 {
@@ -116,24 +126,27 @@ void hkCamelZombieFunc(int a1, int a2, int a3)
 
 #pragma region Vertical World Map Scrolling
 
+// this is inlined in A64
+// the proper function is WorldMap::Init that sets up the X axis boundaries
+// I think it should be called every time a world map is entered
 void hkWorldMapDoMovement(WorldMap* self, float fX, float fY, bool disableBoundaryChecks)
 {
     if (!disableBoundaryChecks)
     {
-        if (fX <= self->m_boundaryX) {
-            fX = self->m_boundaryX;
+        if (fX <= self->m_boundingRect.mX) {
+            fX = self->m_boundingRect.mX;
         }
 
-        if (fX >= self->m_boundaryX + self->m_boundaryWidth) {
-            fX = self->m_boundaryX + self->m_boundaryWidth;
+        if (fX >= self->m_boundingRect.mX + self->m_boundingRect.mWidth) {
+            fX = self->m_boundingRect.mX + self->m_boundingRect.mWidth;
         }
 
-        if (fY <= self->m_boundaryY) {
-            fY = self->m_boundaryY;
+        if (fY <= self->m_boundingRect.mY) {
+            fY = self->m_boundingRect.mY;
         }
 
-        if (fY >= self->m_boundaryY + self->m_boundaryHeight) {
-            fY = self->m_boundaryY + self->m_boundaryHeight;
+        if (fY >= self->m_boundingRect.mY + self->m_boundingRect.mHeight) {
+            fY = self->m_boundingRect.mY + self->m_boundingRect.mHeight;
         }
     }
 
@@ -143,50 +156,12 @@ void hkWorldMapDoMovement(WorldMap* self, float fX, float fY, bool disableBounda
 
 #pragma endregion
 
-#pragma region Piano Zombie List
+#pragma region Board Zoom + GetBoard
 
-typedef bool (*initZombiePianoList)(int, int);
-initZombiePianoList oInitZombiePianoList = NULL;
+// todo: find 2 functions that calculate board zoom
+// maybe its in LawnApp vftable
 
-std::vector<SexyString>* g_pianoList = NULL;
-bool g_pianoListInitialized = false;
-
-bool hkInitZombiePianoList(int a1, int a2)
-{
-    // This function is called every frame when a piano zombie is on screen
-    // So this global bool is needed to prevent wasting a massive amount of cpu time
-    if (!g_pianoListInitialized)
-    {
-        bool orig = oInitZombiePianoList(a1, a2);
-
-        uint ptrAddr = getActualOffset(0x1D890F4); // address of piano zombie's list in memory
-        g_pianoList = reinterpret_cast<std::vector<SexyString>*>(ptrAddr);
-
-        // @todo: add this to piano zombie's props instead?
-        g_pianoList->clear();
-        g_pianoList->push_back("cowboy");
-        g_pianoList->push_back("cowboy_armor1");
-        g_pianoList->push_back("cowboy_armor2");
-        g_pianoList->push_back("cowboy_armor4");
-
-        g_pianoListInitialized = true;
-    }
-    return oInitZombiePianoList(a1, a2);
-}
-
-#pragma endregion
-
-typedef int(*boardCtor)(Board*, int*);
-boardCtor oBoardDraw = NULL;
-
-int hkBoardDraw(Board* self, int* a2)
-{
-
-    oBoardDraw(self, a2);
-    return 1;
-}
-
-typedef int (*mGetBoard)();
+typedef int64_t (*mGetBoard)();
 mGetBoard oGetBoard = NULL;
 
 Board* hkGetBoard() {
@@ -198,6 +173,8 @@ Board* getBoard() {
     return hkGetBoard();
 }
 
+#pragma endregion
+
 #pragma region Build Symbol Funcs
 
 Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc PlantType::oPlantTypeBuildSymbols = NULL;
@@ -207,6 +184,16 @@ Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc ZombieType::oZombieTypeBui
 
 // hardcoded bull codename: 75667C
 
+// just a placeholder func
+typedef int(*mapp)(int);
+mapp oMap = NULL;
+
+int map(int a1)
+{
+    LOGI("now");
+    return oMap(a1);
+}
+
 __attribute__((constructor))
 // This is automatically executed when the lib is loaded
 // Run your initialization code here
@@ -215,25 +202,44 @@ void libPVZ2ExpansionMod_main()
 	LOGI("Initializing %s", LIB_TAG);
 
     // Function hooks
-    FluffyHookFunction(0x8D3150, (void*)hkPlantTypeCtor, (void**)&oPlantTypeCtor);
-    FluffyHookFunction(0xDA5C58, (void*)hkCreatePlantNameMapper, (void**)&oPlantNameMapperCtor);
-    FluffyHookFunction(0xCA5768, (void*)hkZombieTypeCtor, (void**)&oZombieTypeCtor);
-    FluffyHookFunction(0x10643E0, (void*)hkCreateZombieTypenameMap, (void**)&oZombieAlmanacCtor);
-    FluffyHookFunction(0x8D1FE8, (void*)PlantType::buildSymbols, (void**)&PlantType::oPlantTypeBuildSymbols);
-    FluffyHookFunction(0xCA5894, (void*)ZombieType::buildSymbols, (void**)&ZombieType::oZombieTypeBuildSymbols);
+    
+#ifdef A32
+    // IntegerID backport
+    PVZ2HookFunction(0x8D3150, (void*)hkPlantTypeCtor, (void**)&oPlantTypeCtor);
+    PVZ2HookFunction(0xDA5C58, (void*)hkCreatePlantNameMapper, (void**)&oPlantNameMapperCtor);
+    PVZ2HookFunction(0xCA5768, (void*)hkZombieTypeCtor, (void**)&oZombieTypeCtor);
+    PVZ2HookFunction(0x10643E0, (void*)hkCreateZombieTypenameMap, (void**)&oZombieAlmanacCtor);
+    PVZ2HookFunction(0x8D1FE8, (void*)PlantType::buildSymbols, (void**)&PlantType::oPlantTypeBuildSymbols);
+    PVZ2HookFunction(0xCA5894, (void*)ZombieType::buildSymbols, (void**)&ZombieType::oZombieTypeBuildSymbols);
 
-    FluffyHookFunction(0x789DC8, (void*)hkCamelZombieFunc, nullptr);
-    //FluffyHookFunction(0x440E4C, (void*)hkWorldMapDoMovement, nullptr);
-    //FluffyHookFunction(0x9EC540, (void*)hkWorldDataCtor, (void**)&oWorldDataCtor);
-    FluffyHookFunction(0x885F80, (void*)hkInitZombiePianoList, (void**)&oInitZombiePianoList);
+    // Some general fixes
+    PVZ2HookFunction(0x789DC8, (void*)hkCamelZombieFunc, nullptr);
+    PVZ2HookFunction(0x949EFC, (void*)hkGetBoard, (void**)&oGetBoard);
+#else
+    PVZ2HookFunction(0xC6D080, (void*)hkPlantTypeCtor, (void**)&oPlantTypeCtor);
+    PVZ2HookFunction(0x11797B4, (void*)hkCreatePlantNameMapper, (void**)&oPlantNameMapperCtor);
+    PVZ2HookFunction(0x10680BC, (void*)hkZombieTypeCtor, (void**)&oZombieTypeCtor);
+    PVZ2HookFunction(0x14665C4, (void*)hkCreateZombieTypenameMap, (void**)&oZombieAlmanacCtor);
+    PVZ2HookFunction(0xC6BF48, (void*)PlantType::buildSymbols, (void**)&PlantType::oPlantTypeBuildSymbols);
+    PVZ2HookFunction(0x106828C, (void*)ZombieType::buildSymbols, (void**)&ZombieType::oZombieTypeBuildSymbols);
 
-    //FluffyHookFunction(0x72C56C, (void*)hkBoardDraw, (void**)&oBoardDraw);
-    //FluffyHookFunction(0x949EFC, (void*)hkGetBoard, (void**)&oGetBoard);
+    PVZ2HookFunction(0xB18DC4, (void*)hkCamelZombieFunc, nullptr);
+    PVZ2HookFunction(0xCE4D8C, (void*)hkGetBoard, (void**)&oGetBoard);
+#endif
+
+    //PVZ2HookFunction(0x440E4C, (void*)hkWorldMapDoMovement, nullptr);
+    //PVZ2HookFunction(0x9EC540, (void*)hkWorldDataCtor, (void**)&oWorldDataCtor);
+    //PVZ2HookFunction(0x102C138, (void*)map, (void**)&oMap);
+
+    //PVZ2HookFunction(0x72C56C, (void*)hkBoardDraw, (void**)&oBoardDraw);
 
     //Furr::OverrideSunCollectableModule::modInit();
     //Furr::OverrideSunCollectableModuleProps::modInit();
 
-    PlantPowerLily::modInit();
+    // feature inits
+    PowerLilyProps::modInit();
+
+    //BoardPropertySheet::modInit();
 
     //ZombieCamel::modInit();
     //ZombieEightiesArcadeProps::modInit();

@@ -42,12 +42,19 @@ public:
 	static void buildSymbols(Reflection::CRefManualSymbolBuilder* builder, Reflection::RClass* rclass)
 	{
 		oZombieTypeBuildSymbols(builder, rclass);
+		LOGI("Building symbols for ZombieType");
 		REGISTER_STANDARD_PROPERTY(builder, rclass, ZombieType, IntegerID);
 	}
 
 	static void GetFromName(Sexy::RtWeakPtr<ZombieType>* res, SexyString zombieName);
 };
 
+#ifdef A32
 static_assert(sizeof(ZombieType) == 0x8C);
 static_assert(offsetof(ZombieType, AudioGroups) == 0x64);
 static_assert(offsetof(ZombieType, FlagType) == 0x80);
+#else
+static_assert(sizeof(ZombieType) == 0x100);
+static_assert(offsetof(ZombieType, AudioGroups) == 0xC8);
+static_assert(offsetof(ZombieType, FlagType) == 0xF0);
+#endif

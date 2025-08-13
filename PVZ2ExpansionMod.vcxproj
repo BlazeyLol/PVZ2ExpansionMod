@@ -103,7 +103,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <IncludePath>$(IncludePath)</IncludePath>
+    <IncludePath>../PVZ2ExpansionMod;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
   </PropertyGroup>
@@ -144,7 +144,11 @@
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>None</DebugInformationFormat>
     </ClCompile>
+    <Link>
+      <DebuggerSymbolInformation>OmitAllSymbolInformation</DebuggerSymbolInformation>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
@@ -191,9 +195,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="And64Inline\And64InlineHook.cpp" />
     <ClCompile Include="Furr\OverrideSunCollectableModule.cpp" />
     <ClCompile Include="PVZ2ExpansionMod.cpp" />
     <ClCompile Include="memUtils.cpp" />
+    <ClCompile Include="PvZ2\BoardPropertySheet.cpp" />
     <ClCompile Include="PvZ2\Plant_PowerLily.cpp" />
     <ClCompile Include="PvZ2\StageModule.cpp" />
     <ClCompile Include="PvZ2\Zombie_Camel.cpp" />
@@ -207,6 +213,7 @@
     <ClCompile Include="Substrate\SubstratePosixMemory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="And64Inline\And64InlineHook.hpp" />
     <ClInclude Include="Furr\OverrideSunCollectableModule.h" />
     <ClInclude Include="PVZ2ExpansionMod.h" />
     <ClInclude Include="Logging.h" />
@@ -215,7 +222,9 @@
     <ClInclude Include="PvZ2\AttachedEffectManager.h" />
     <ClInclude Include="PvZ2\Board.h" />
     <ClInclude Include="PvZ2\BoardEntity.h" />
+    <ClInclude Include="PvZ2\BoardPropertySheet.h" />
     <ClInclude Include="PvZ2\CollisionTypeFlags.h" />
+    <ClInclude Include="PvZ2\Components.h" />
     <ClInclude Include="PvZ2\DamageInfo.h" />
     <ClInclude Include="PvZ2\DamageTypeFlags.h" />
     <ClInclude Include="PvZ2\Delegate.h" />
@@ -247,6 +256,7 @@
     <ClInclude Include="PvZ2\StringRestrictionSet.h" />
     <ClInclude Include="PvZ2\TimeMgr.h" />
     <ClInclude Include="PvZ2\WorldMap.h" />
+    <ClInclude Include="PvZ2\WorldMapPropertySheet.h" />
     <ClInclude Include="PvZ2\Zombie.h" />
     <ClInclude Include="PvZ2\ZombieAnimRig.h" />
     <ClInclude Include="PvZ2\ZombieConditions.h" />
@@ -286,6 +296,8 @@
   <ItemGroup>
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
+    <None Include="Packages\PlantTypes.json" />
+    <None Include="Packages\ZombieTypes.json" />
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

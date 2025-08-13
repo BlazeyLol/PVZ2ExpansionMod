@@ -67,7 +67,10 @@ public:
 	std::vector<DamageTypeFlags> DamageFlags;
 };
 
+#if A32
 static_assert(sizeof(ProjectilePropertySheet) == 0x188);
 static_assert(offsetof(ProjectilePropertySheet, ImpactPAM) == 0x114);
 static_assert(offsetof(ProjectilePropertySheet, InitialScale) == 0x98);
 static_assert(offsetof(ProjectilePropertySheet, OverrideStunCondition) == 0x58);
+#else
+#endif

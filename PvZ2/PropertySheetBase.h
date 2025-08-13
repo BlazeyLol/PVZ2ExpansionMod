@@ -19,6 +19,8 @@ public:
 class PropertySheetBase : public GameObject
 {
 public:
+	std::vector<BoardEntityScaledPropsEntry> ScaledProps;
+
 	PropertySheetBase() {}
 	~PropertySheetBase()
 	{
@@ -26,8 +28,6 @@ public:
 		propertySheetBaseDtor destructor = (propertySheetBaseDtor)getActualOffset(0x253CE8);
 		destructor(this);
 	}
-
-	std::vector<BoardEntityScaledPropsEntry> ScaledProps;
 
 	virtual void Function13() {}
 	virtual void Function14() {}

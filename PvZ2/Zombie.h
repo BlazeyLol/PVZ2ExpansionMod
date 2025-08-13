@@ -238,5 +238,8 @@ public:
 	virtual void PlaySoundOnEat() {}
 };
 
+#if A32
 static_assert(offsetof(Zombie, m_conditionTracker) == 0x1A0);
 static_assert(offsetof(Zombie, pad_0210) == 0x210);
+#else
+#endif

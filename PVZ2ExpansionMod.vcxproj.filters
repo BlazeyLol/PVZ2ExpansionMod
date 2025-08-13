@@ -15,6 +15,8 @@
     <ClCompile Include="PvZ2\ZombieType.cpp" />
     <ClCompile Include="PvZ2\Zombie_EightiesArcade.cpp" />
     <ClCompile Include="PvZ2\Zombie_Camel.cpp" />
+    <ClCompile Include="PvZ2\BoardPropertySheet.cpp" />
+    <ClCompile Include="And64Inline\And64InlineHook.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PVZ2ExpansionMod.h" />
@@ -92,10 +94,16 @@
     <ClInclude Include="PvZ2\Zombie_EightiesArcade.h" />
     <ClInclude Include="PvZ2\AttachedEffectManager.h" />
     <ClInclude Include="PvZ2\Zombie_Camel.h" />
+    <ClInclude Include="PvZ2\BoardPropertySheet.h" />
+    <ClInclude Include="PvZ2\Components.h" />
+    <ClInclude Include="PvZ2\WorldMapPropertySheet.h" />
+    <ClInclude Include="And64Inline\And64InlineHook.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
     <None Include=".gitattributes" />
     <None Include="README.md" />
+    <None Include="Packages\PlantTypes.json" />
+    <None Include="Packages\ZombieTypes.json" />
   </ItemGroup>
 </Project>

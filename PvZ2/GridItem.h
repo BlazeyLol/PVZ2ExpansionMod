@@ -37,6 +37,9 @@ public:
 	}
 };
 
+#if A32
 static_assert(sizeof(GridItem) == 0xF0);
 static_assert(offsetof(GridItem, unk2) == 0x84);
 static_assert(offsetof(GridItem, m_conditionTracker) == 0x68);
+#else
+#endif

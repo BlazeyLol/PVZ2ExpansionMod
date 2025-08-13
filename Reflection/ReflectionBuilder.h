@@ -7,8 +7,13 @@
 #include "CRefManualSymbolBuilder.h"
 #include "RCustomType/TStdVectorManipulator.h"
 
+#ifdef A32
 #define RT_BUILDER_REGISTERCLASS_FUNC1 0x123B308
 #define RT_BUILDER_REGISTERCLASS_FUNC2 0x123B35C
+#else
+#define RT_BUILDER_REGISTERCLASS_FUNC1 0x1624024
+#define RT_BUILDER_REGISTERCLASS_FUNC2 0x162413C
+#endif
 
 template <typename T>
 using RTMap = std::map<SexyString, T>;
@@ -101,6 +106,13 @@ void ReplaceRTClassPtr(uint classPtr, Sexy::RtClass* newClassPtr);
     void* prop_##name = (builder)->GetPropertyOfType(Reflection::Type_Char, sizeof(char)); \
     void* regProp_##name = (builder)->RegisterPointerProperty(0, prop_##name, NULL); \
     (builder)->RegisterProperty(rClass, #name, offsetof(className, name), regProp_##name); \
+
+#define REGISTER_STRING_VECTOR_PROPERTY(builder, rClass, className, name) \
+    void* prop_##name = (builder)->GetPropertyOfType(Reflection::Type_Char, sizeof(char)); \
+    TStdVectorManipulator<std::string>* manip_##name = new TStdVectorManipulator<std::string>(); \
+    void* strProp_##name = (builder)->RegisterPointerProperty(0, prop_##name, NULL); \
+    void* regProp_##name = (builder)->RegisterPointerProperty(2, strProp_##name, manip_##name); \
+    (builder)->RegisterProperty(rClass, #name, offsetof(className, name), regProp_##name);
 
 #define REGISTER_CLASS_WITH_PROPERTIES(builder, className) \
     (builder)->RegisterClassWithProperties(#className, className::buildSymbols, sizeof(className), 0); \
@@ -252,7 +264,7 @@ void ReplaceRTClassPtr(uint classPtr, Sexy::RtClass* newClassPtr);
         return s_rtClass; \
     }
 
-#ifdef __arm__
+#ifdef A32
 #define DEFINE_RT_CLASS_GET_CLASS_OVERRIDE(className, parentGetTypeAddr, existingGetTypeAddr, existingTypeAddr) \
     static Sexy::RtClass* getRtClass() \
     { \
@@ -266,6 +278,25 @@ void ReplaceRTClassPtr(uint classPtr, Sexy::RtClass* newClassPtr);
             registerClass(); \
             uint dummy; \
             MSHookFunction((void*)getActualOffset(existingGetTypeAddr), (void*)className::getRTClass, (void**)&dummy); \
+            ReplaceRTClassPtr(getActualOffset(existingTypeAddr), rtClass); \
+            LOGI("Override...");    \
+        } \
+        return s_rtClass; \
+    }
+#else
+#define DEFINE_RT_CLASS_GET_CLASS_OVERRIDE(className, parentGetTypeAddr, existingGetTypeAddr, existingTypeAddr) \
+    static Sexy::RtClass* getRtClass() \
+    { \
+        if (!s_rtClass) \
+        { \
+            Sexy::RtClass* rtClass = new Sexy::RtClass(); \
+            s_rtClass = rtClass; \
+            rtClassGetClassFunc parentGetType = (rtClassGetClassFunc)getActualOffset(parentGetTypeAddr); \
+            Sexy::RtClass* parent = parentGetType(); \
+            rtClass->RegisterClass(#className, parent, className::construct); \
+            registerClass(); \
+            uint dummy; \
+            A64HookFunction((void*)getActualOffset(existingGetTypeAddr), (void*)className::getRTClass, (void**)&dummy); \
             ReplaceRTClassPtr(getActualOffset(existingTypeAddr), rtClass); \
             LOGI("Override...");    \
         } \

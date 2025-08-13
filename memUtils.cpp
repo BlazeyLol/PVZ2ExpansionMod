@@ -1,6 +1,7 @@
 #include "memUtils.h"
 
 #include "Substrate/SubstrateHook.h"
+#include "And64Inline/And64InlineHook.hpp"
 
 uint g_libAddress = NULL;
 
@@ -34,9 +35,13 @@ uint getActualOffset(uint offset)
     return g_libAddress + offset;
 }
 
-void FluffyHookFunction(uint offset, void* replace, void** result) 
+void PVZ2HookFunction(uint offset, void* replace, void** result)
 {
+#ifdef A32
     MSHookFunction((void*)getActualOffset(offset), replace, result);
+#else
+    A64HookFunction((void*)getActualOffset(offset), replace, result);
+#endif
 }
 
 void* copyVFTable(int vftableAddr, int numVFuncs)

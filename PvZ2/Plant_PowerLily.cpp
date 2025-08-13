@@ -1,27 +1,34 @@
 #include "Plant_PowerLily.h"
 #include "Board.h"
 
-int hkPlantPowerLilySpawnCollectable(PlantPowerLily* self, int a2)
+// the type should be PlantPowerLily*
+void hkPlantPowerLilySpawnCollectable(PlantFramework* self, int64_t a2)
 {
-    auto* props = reinterpret_cast<PowerLilyProps*>(self->m_plant->m_propertySheet.Get());
+    //auto* props = self->m_plant->GetProps<PowerLilyProps>();
 
-    SexyVector2 spawnPos(self->m_plant->m_position.x, self->m_plant->m_position.y + props->CollectableOffsetY);
-    for (int iter = 0; iter < props->CollectableCount; iter++)
-    {
-        spawnCollectable(props->CollectableType, spawnPos);
-    }
+    SexyVector2 spawnPos(self->m_plant->m_position.x, self->m_plant->m_position.y);
+    LOGI("Pos x: %f", spawnPos.x);
+    LOGI("Pos y: %f", spawnPos.y);
+    spawnCollectable("plantfood", spawnPos);
 
-    return 1;
+    //SexyVector2 spawnPos(self->m_plant->m_position.x, self->m_plant->m_position.y + props->CollectableOffsetY);
+    //for (int iter = 0; iter < props->CollectableCount; iter++)
+    //{
+    //    spawnCollectable(props->CollectableType, spawnPos);
+    //}
 }
 
 Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc PowerLilyProps::oPowerLilyPropsBuildSymbols = NULL;
 
-void PlantPowerLily::modInit()
+void PowerLilyProps::modInit()
 {
-    LOGI("PowerLily mod init");
+    LOGI("Initializing PowerLilyProps");
 
-    FluffyHookFunction(0xB234A8, (void*)hkPlantPowerLilySpawnCollectable, nullptr);
-    FluffyHookFunction(0x2BBEA8, (void*)PowerLilyProps::buildSymbols, (void**)&PowerLilyProps::oPowerLilyPropsBuildSymbols);
-
-    LOGI("PowerLily finish init");
+#if A32
+    PVZ2HookFunction(0xB234A8, (void*)hkPlantPowerLilySpawnCollectable, nullptr);
+    PVZ2HookFunction(0x2BBEA8, (void*)PowerLilyProps::buildSymbols, (void**)&PowerLilyProps::oPowerLilyPropsBuildSymbols);
+#else
+    PVZ2HookFunction(0xED5688, (void*)hkPlantPowerLilySpawnCollectable, nullptr);
+    PVZ2HookFunction(0x61AD50, (void*)PowerLilyProps::buildSymbols, (void**)&PowerLilyProps::oPowerLilyPropsBuildSymbols);
+#endif
 }

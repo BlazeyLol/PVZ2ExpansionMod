@@ -106,6 +106,7 @@ public:
 	float unk;
 };
 
+#ifdef A32
 static_assert(sizeof(ZombiePropertySheet) == 0x198);
 static_assert(offsetof(ZombiePropertySheet, Speed) == 0x28);
 static_assert(offsetof(ZombiePropertySheet, SpeedVariance) == 0x2C);
@@ -121,3 +122,5 @@ static_assert(offsetof(ZombiePropertySheet, GridExtents) == 0xFC);
 static_assert(offsetof(ZombiePropertySheet, HypnoshroomEffectOffset) == 0x104);
 static_assert(offsetof(ZombiePropertySheet, MaxTideLoweredPercent) == 0x134);
 static_assert(offsetof(ZombiePropertySheet, ShrunkenScale) == 0x190);
+#else
+#endif

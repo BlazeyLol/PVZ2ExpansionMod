@@ -4,7 +4,7 @@
  
 // Most of the types should be in a Sexy:: namespace
 // I'm not gonna wrap them now though
-//
+
 // types with special properties and methods should be available in their own headers
 
 // popcap uses std::string, but SexyString is more flexible
@@ -16,7 +16,7 @@ typedef unsigned short ushort;
 typedef unsigned int uint;
 typedef unsigned long ulong;
 
-// idfk i found this in Board's buildSymbols
+// idfk i found this in Board's buildSymbols (hypermodern)
 // its probably just a float
 typedef float pvztime_t;
 

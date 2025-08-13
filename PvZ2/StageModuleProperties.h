@@ -32,5 +32,8 @@ public:
 	SexyString StarChallengeUnlockLevel;
 };
 
+#if A32
 static_assert(sizeof(StageModuleProperties) == 0x13C);
 static_assert(offsetof(StageModuleProperties, RailcartDefaultTypeName) == 0xDC);
+#else
+#endif

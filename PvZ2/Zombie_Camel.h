@@ -17,6 +17,7 @@ public:
 	ZombieCamelSegmentType m_camelType;
 
 	// unsure of the order
+	// the fields may be useless
 	bool m_isACamel;
 	bool m_tooCloseToPrev;
 	bool m_tooFarFromNext;
@@ -38,6 +39,7 @@ public:
 	bool DropArmOnSignDrop;
 	bool SwitchToHeadCamelSign;
 
+	// it doesnt work :sob:
 	SexyString SegmentType;
 	char pad[16];
 	SexyString SegmentZombieType;
@@ -55,10 +57,13 @@ public:
 	}
 };
 
+#if A32
 static_assert(offsetof(ZombieCamelProps, CamelSegmentOffset) == 0x198);
 static_assert(offsetof(ZombieCamelProps, SpawnManyCamelSegmentAtPosition) == 0x1A8);
 static_assert(offsetof(ZombieCamelProps, SurprisedTime) == 0x1B0);
 static_assert(offsetof(ZombieCamelProps, SegmentType) == 0x1B8);
+#else
+#endif
 
 //class ZombieCamelTouchProps : public ZombieCamelProps
 //{

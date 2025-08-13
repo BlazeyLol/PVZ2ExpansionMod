@@ -1,5 +1,6 @@
 #pragma once
 #include "ModularRealObject.h"
+#include "Components.h"
 
 #define OFFSET_BOARDENTITY_DIE 0x53F498
 
@@ -11,7 +12,7 @@ public:
 	Rect m_collisionRect;
 	int m_boardEntityFlags;
 	int m_unk0x54;
-	Sexy::RtWeakPtr<void> m_componentRunner;
+	Sexy::RtWeakPtr<ComponentRunner> m_componentRunner;
 	float m_createdTime;
 
 	void Die() {

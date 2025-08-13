@@ -56,7 +56,7 @@ namespace Reflection
 					{
 						if (vecSize > 0)
 						{
-							LOGI("[ Reflection::RCustomType::TStdVectorManipulator::Edit ] [ Begin manip vector (size: %d) ]", vecSize);
+							LOGI("Begin manip vector (size: %d)", vecSize);
 							vector->resize(vecSize);
 
 							for (int i = 0; i < vecSize; i++)
@@ -96,7 +96,7 @@ namespace Reflection
 
 					return true;
 
-					LOGW("[ Reflection::RCustomType::TStdVectorManipulator::Edit ] [ Panic! Need to edit vector but manipInfo->unkBool is false ]");
+					LOGW("Panic! Need to edit vector but manipInfo->unkBool is false");
 				}
 			}
 

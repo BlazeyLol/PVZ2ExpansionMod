@@ -64,7 +64,7 @@ public:
 	int m_levelRandomIndex;
 	pvztime_t m_levelStartTime;
 	std::vector<SexyString> m_gameplayResources;
-	int m_plantfoodCount;
+	uint m_plantfoodCount; // uint8_t?
 	std::vector<PresentRecord> m_pendingPresentRewards;
 	std::vector<Sexy::RtWeakPtr<void>> m_boardRegions;
 	SexyVector3 m_finalDestroyedZombiePosition;
@@ -143,6 +143,7 @@ public:
 	char pad400[0x190];
 };
 
+#if A32
 static_assert(sizeof(Board) == 0x590);
 static_assert(offsetof(Board, m_boardRegions) == 0xE0);
 static_assert(offsetof(Board, m_cellLocked) == 0x228);
@@ -159,6 +160,8 @@ static_assert(offsetof(Board, m_levelNameTextWidgetPtr) == 0x358);
 static_assert(offsetof(Board, m_troglobitePushMinGridX) == 0x3E0);
 static_assert(offsetof(Board, m_allStarDestroyedPlant) == 0x3F9);
 static_assert(offsetof(Board, m_addedZombies) == 0x3A8);
+#else
+#endif
 
 Board* getBoard();
-uint getLawnApp();
+uint64_t getLawnApp();

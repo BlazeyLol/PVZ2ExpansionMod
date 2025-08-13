@@ -80,9 +80,12 @@ public:
 	}
 };
 
+#if A32
 static_assert(offsetof(Plant, m_type) == 0xE0);
 static_assert(offsetof(Plant, m_conditionTracker) == 0x160);
 static_assert(sizeof(Plant) == 0x1E8);
+#else
+#endif
 
 class PlantGroup : public BoardEntity
 {

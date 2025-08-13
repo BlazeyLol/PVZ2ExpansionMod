@@ -22,8 +22,8 @@ void ZombieCamel::modInit()
 {
 	LOGI("ZombieCamel mod init");
 
-	FluffyHookFunction(0x7873E4, (void*)hkZombieCamelAssignArmor, (void**)&oZombieCamelAssignArmor);
-	FluffyHookFunction(0xA07C70, (void*)ZombieCamelProps::buildSymbols, (void**)&ZombieCamelProps::oZombieCamelPropsBuildSymbols);
+	PVZ2HookFunction(0x7873E4, (void*)hkZombieCamelAssignArmor, (void**)&oZombieCamelAssignArmor);
+	PVZ2HookFunction(0xA07C70, (void*)ZombieCamelProps::buildSymbols, (void**)&ZombieCamelProps::oZombieCamelPropsBuildSymbols);
 
 	LOGI("ZombieCamel finish init");
 }

@@ -8,19 +8,22 @@ namespace Sexy
 	{
 	public:
 		char pad018[12];
-		SexyString m_filePath;
-		int m_width;
-		int m_height;
-		int m_numRows;
-		int m_numCols;
-		RtWeakPtr<Image> m_atlasImage;
-		int m_atlastStartX;
-		int m_atlastStartY;
-		int m_atlastEndX;
-		int m_atlastEndY;
+		SexyString mFilePath;
+		int mWidth;
+		int mHeight;
+		int mNumRows;
+		int mNumCols;
+		RtWeakPtr<Image> mAtlasImage;
+		int mAtlastStartX;
+		int mAtlastStartY;
+		int mAtlastEndX;
+		int mAtlastEndY;
 	};
 
+#if A32
 	static_assert(sizeof(Image) == 0x58);
-	static_assert(offsetof(Image, m_filePath) == 0x24);
-	static_assert(offsetof(Image, m_atlastStartY) == 0x4C);
+	static_assert(offsetof(Image, mFilePath) == 0x24);
+	static_assert(offsetof(Image, mAtlastStartY) == 0x4C);
+#else
+#endif
 }

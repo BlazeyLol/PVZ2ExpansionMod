@@ -68,6 +68,7 @@ public:
 	std::vector<std::vector<SexyString>> PerksDisabledPerDifficulty;
 };
 
+#if A32
 static_assert(sizeof(LevelDefinition) == 0x278);
 static_assert(offsetof(LevelDefinition, FirstRewardType) == 0xA4);
 static_assert(offsetof(LevelDefinition, StartingSun) == 0x40);
@@ -76,3 +77,5 @@ static_assert(offsetof(LevelDefinition, ForceNextLevel) == 0xF8);
 static_assert(offsetof(LevelDefinition, GameFeaturesToUnlock) == 0x118);
 static_assert(offsetof(LevelDefinition, DoMusicChanges) == 0x154);
 static_assert(offsetof(LevelDefinition, SuppressAccountUpgrades) == 0x199);
+#else
+#endif
