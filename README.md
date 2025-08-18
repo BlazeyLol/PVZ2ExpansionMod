@@ -17,9 +17,9 @@ An expanded library for PvZ2 (9.6.1), based on Brekko's ExampleMod. I want it to
 * Mummy Memory from the original Example Mod
 
 # Future Plans
-I want to take care of more plants/zombies like grinderhead, bull, camels, ra, arcade pusher and tomb raiser.
+I want to take care of more plants/zombies like grinderhead, bull, camels, ra and tomb raiser.
 I am also working on a new Board zoom system, that doesn't require modifying Grid's size.
-Map vertical scrolling, custom Game Features and 
+Map vertical scrolling, custom Game Features and other stuff.
 
 # Build Instructions
 Building this repo is the same as building my example mod update. The instructions regarding that [you can find here](https://github.com/BlazeyLol/PVZ2ExampleMod).
@@ -29,5 +29,4 @@ If you want to utilize Power Lily's custom fields, add these to her props:
 - CollectableCount (integer)
 - CollectableOffsetY (float)
 
-Piano List is now softcoded in packages - you have to add this field to BoardPropertySheet (from PropertySheets json):
-- ZombiePianoList (array<string>)
+Arcade's new property is `GridItemType` (string). One important note: DO NOT use a grid item which class isn't `GridItemEightiesArcadeCabinet`, otherwise zombie won't be able to push it. I want to fix it at some point.
