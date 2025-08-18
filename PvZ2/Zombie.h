@@ -54,8 +54,8 @@ public:
 	float m_rotation;
 	float m_scale;
 	int32_t m_zombieRenderLayerOffset;
-	Sexy::RtWeakPtr<void> m_ownerPlant;
-	Sexy::RtWeakPtr<void> m_forcedTarget;
+	Sexy::RtWeakPtr<Plant> m_ownerPlant;
+	Sexy::RtWeakPtr<Sexy::RtWeakPtr<Sexy::RtObject>> m_forcedTarget;
 	char pad_0170[24];
 	struct SexyVector2 m_stormTargetLocation;
 	int32_t m_stormType;
@@ -64,9 +64,9 @@ public:
 	int trackerPad[21];
 	char pad_0210[190];
 	std::vector<int> m_familyResistances;
-	std::vector<int> m_targetHistory;
+	std::vector<Sexy::RtWeakPtr<Sexy::RtObject>> m_targetHistory;
 	int32_t m_loot;
-	char pad_02EC[16];
+	Sexy::Color m_highlightColor;
 	bool m_isBeingDestroyed;
 	bool m_wasMowedDown;
 	Sexy::RtWeakPtr<ZombiePropertySheet> m_propertySheet;
@@ -239,8 +239,5 @@ public:
 	virtual void PlaySoundOnEat() {}
 };
 
-#ifdef A32
 static_assert(offsetof(Zombie, m_conditionTracker) == 0x1A0);
 static_assert(offsetof(Zombie, pad_0210) == 0x210);
-#else
-#endif

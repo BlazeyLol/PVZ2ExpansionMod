@@ -109,7 +109,7 @@ void ReplaceRTClassPtr(uint classPtr, Sexy::RtClass* newClassPtr);
 
 #define REGISTER_STRING_VECTOR_PROPERTY(builder, rClass, className, name) \
     void* prop_##name = (builder)->GetPropertyOfType(Reflection::Type_Char, sizeof(char)); \
-    TStdVectorManipulator<std::string>* manip_##name = new TStdVectorManipulator<std::string>(); \
+    Reflection::RCustomType::TStdVectorManipulator<SexyString>* manip_##name = new Reflection::RCustomType::TStdVectorManipulator<SexyString>(); \
     void* strProp_##name = (builder)->RegisterPointerProperty(0, prop_##name, NULL); \
     void* regProp_##name = (builder)->RegisterPointerProperty(2, strProp_##name, manip_##name); \
     (builder)->RegisterProperty(rClass, #name, offsetof(className, name), regProp_##name);
@@ -129,11 +129,11 @@ void ReplaceRTClassPtr(uint classPtr, Sexy::RtClass* newClassPtr);
         static void modInit();
 
 #define DEFINE_STATIC_RT_CLASS_MEMBERS(className) \
-    void* className::vftable = NULL; \
-    Sexy::RtClass* className::s_rtClass = NULL;
+    void* className::vftable = nullptr; \
+    Sexy::RtClass* className::s_rtClass = nullptr;
 
 #define DEFINE_STATIC_RT_CLASS_MEMBERS_NO_VFTABLE_PATCH(className) \
-    Sexy::RtClass* className::s_rtClass = NULL;
+    Sexy::RtClass* className::s_rtClass = nullptr;
 
 #define RT_CLASS_BUILD_SYMBOLS() \
     static void buildSymbols(Reflection::CRefManualSymbolBuilder* builder, Reflection::RClass* rclass) \

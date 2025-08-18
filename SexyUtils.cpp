@@ -1,7 +1,8 @@
 #include "SexyUtils.h"
-#include "PvZ2/Board.h"
+#include <PvZ2/Board.h>
 #include <Sexy/SexyApp.h>
 #include <Sexy/RtWeakPtr.h>
+#include <PvZ2/GridItem.h>
 
 #ifdef A32
 #define LAWNAPP_ADDR 0x1D92A94

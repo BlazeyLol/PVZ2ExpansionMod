@@ -181,7 +181,7 @@ namespace Sexy
 				void* v11 = pSub10CC404(registry, typeId);
 				if (v11)
 				{
-					LOGI("Valid and is correct type");
+					//LOGI("Valid and is correct type");
 					typedef T* (*sub10C8780)(void*, RtWeakPtr*);
 					sub10C8780 pResolveWeakPtr = (sub10C8780)getActualOffset(OFFSET_RTWEAKPTR_RESOLVE);
 					retVal = pResolveWeakPtr(v11, &temp);

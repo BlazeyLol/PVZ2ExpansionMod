@@ -13,6 +13,7 @@ namespace Reflection
     {
     public:
         typedef void(*BuildSymbolsFunc)(CRefManualSymbolBuilder*, RClass*);
+        typedef void* (*ConstructFunc)(void*);
 
         void GetInnerTemplateTypeName(const SexyString& typeName)
         {

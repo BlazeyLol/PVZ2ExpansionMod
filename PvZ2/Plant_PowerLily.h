@@ -5,22 +5,30 @@
 class PowerLilyProps : public PlantPropertySheet
 {
 public:
-	static void modInit();
-
 	SexyString CollectableType = "plantfood";
 	int CollectableCount = 1;
-	char pad[16];
-	float CollectableOffsetY;
+	float CollectableOffsetY = -60.0f;
 
 	static Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc oPowerLilyPropsBuildSymbols;
+	static void modInit();
 
-	// only buildSymbols is needed for class extensions
+	static void* construct()
+	{
+		auto* props = new PowerLilyProps();
+
+		typedef void* (*ctorWithThisPtr)(void*);
+		ctorWithThisPtr baseCtor = (ctorWithThisPtr)getActualOffset(0x2B17D4);
+		baseCtor(props);
+
+		*reinterpret_cast<int*>(uintptr_t(props)) = getActualOffset(0x1C5FC58);
+		return props;
+	}
+
 	static void buildSymbols(Reflection::CRefManualSymbolBuilder* builder, Reflection::RClass* rclass)
 	{
 		oPowerLilyPropsBuildSymbols(builder, rclass);
-		LOGI("Building symbols for PowerLilyProps");
 		REGISTER_STRING_PROPERTY(builder, rclass, PowerLilyProps, CollectableType);
 		REGISTER_STANDARD_PROPERTY(builder, rclass, PowerLilyProps, CollectableCount);
-		//REGISTER_STANDARD_PROPERTY(builder, rclass, PowerLilyProps, CollectableOffsetY);
+		REGISTER_STANDARD_PROPERTY(builder, rclass, PowerLilyProps, CollectableOffsetY);
 	};
 };

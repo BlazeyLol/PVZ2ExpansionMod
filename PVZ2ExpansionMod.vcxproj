@@ -196,10 +196,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="And64Inline\And64InlineHook.cpp" />
-    <ClCompile Include="Furr\OverrideSunCollectableModule.cpp" />
     <ClCompile Include="PVZ2ExpansionMod.cpp" />
     <ClCompile Include="memUtils.cpp" />
-    <ClCompile Include="PvZ2\BoardPropertySheet.cpp" />
     <ClCompile Include="PvZ2\Plant_PowerLily.cpp" />
     <ClCompile Include="PvZ2\StageModule.cpp" />
     <ClCompile Include="PvZ2\Zombie_Camel.cpp" />
@@ -214,7 +212,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="And64Inline\And64InlineHook.hpp" />
-    <ClInclude Include="Furr\OverrideSunCollectableModule.h" />
     <ClInclude Include="PVZ2ExpansionMod.h" />
     <ClInclude Include="Logging.h" />
     <ClInclude Include="pch.h" />
@@ -222,7 +219,6 @@
     <ClInclude Include="PvZ2\AttachedEffectManager.h" />
     <ClInclude Include="PvZ2\Board.h" />
     <ClInclude Include="PvZ2\BoardEntity.h" />
-    <ClInclude Include="PvZ2\BoardPropertySheet.h" />
     <ClInclude Include="PvZ2\CollisionTypeFlags.h" />
     <ClInclude Include="PvZ2\Components.h" />
     <ClInclude Include="PvZ2\DamageInfo.h" />
@@ -250,13 +246,13 @@
     <ClInclude Include="PvZ2\Projectile.h" />
     <ClInclude Include="PvZ2\ProjectilePropertySheet.h" />
     <ClInclude Include="PvZ2\PropertySheetBase.h" />
+    <ClInclude Include="PvZ2\PVZLiveConfig.h" />
     <ClInclude Include="PvZ2\RealObject.h" />
     <ClInclude Include="PvZ2\StageModule.h" />
     <ClInclude Include="PvZ2\StageModuleProperties.h" />
     <ClInclude Include="PvZ2\StringRestrictionSet.h" />
     <ClInclude Include="PvZ2\TimeMgr.h" />
     <ClInclude Include="PvZ2\WorldMap.h" />
-    <ClInclude Include="PvZ2\WorldMapPropertySheet.h" />
     <ClInclude Include="PvZ2\Zombie.h" />
     <ClInclude Include="PvZ2\ZombieAnimRig.h" />
     <ClInclude Include="PvZ2\ZombieConditions.h" />

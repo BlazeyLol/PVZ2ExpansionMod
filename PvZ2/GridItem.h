@@ -29,11 +29,11 @@ public:
 	Point m_gridLocation;
 	Sexy::RtWeakPtr<GridItemPropertySheet> m_props;
 
-	static GridItem* getByName(const SexyString& gridItemName)
+	static GridItem* SpawnGridItemAt(const SexyString& gridItemName, int gridPosX, int gridPosY)
 	{
 		typedef GridItem* (*func716690)(Board*, SexyString, int, int);
 		func716690 func_716690 = (func716690)getActualOffset(0x716690);
-		return func_716690(getBoard(), gridItemName, 0, 0);
+		return func_716690(getBoard(), gridItemName, gridPosX, gridPosY);
 	}
 };
 

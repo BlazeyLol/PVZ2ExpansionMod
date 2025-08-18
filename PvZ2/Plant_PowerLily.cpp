@@ -24,11 +24,7 @@ void PowerLilyProps::modInit()
 {
     LOGI("Initializing PowerLilyProps");
 
-#ifdef A32
     PVZ2HookFunction(0xB234A8, (void*)hkPlantPowerLilySpawnCollectable, nullptr);
-    PVZ2HookFunction(0x2BBEA8, (void*)PowerLilyProps::buildSymbols, (void**)&PowerLilyProps::oPowerLilyPropsBuildSymbols);
-#else
-    PVZ2HookFunction(0xED5688, (void*)hkPlantPowerLilySpawnCollectable, nullptr);
-    PVZ2HookFunction(0x61AD50, (void*)PowerLilyProps::buildSymbols, (void**)&PowerLilyProps::oPowerLilyPropsBuildSymbols);
-#endif
+    PVZ2HookFunction(0x2BBD5C, (void*)construct, nullptr);
+    PVZ2HookFunction(0x2BBEA8, (void*)buildSymbols, (void**)&oPowerLilyPropsBuildSymbols);
 }

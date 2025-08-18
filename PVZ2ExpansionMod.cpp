@@ -9,7 +9,6 @@
 #include <Sexy/SexyApp.h>
 
 #include "PvZ2/Board.h"
-#include "PvZ2/BoardPropertySheet.h"
 #include "PvZ2/PlantType.h"
 #include "PvZ2/WorldMap.h"
 #include "PvZ2/ZombieType.h"
@@ -17,8 +16,6 @@
 #include "PvZ2/Plant_PowerLily.h"
 #include "PvZ2/Zombie_EightiesArcade.h"
 #include "PvZ2/Zombie_Camel.h"
-
-#include <Furr/OverrideSunCollectableModule.h>
 
 
 #pragma region Alias to ID
@@ -126,43 +123,15 @@ void hkCamelZombieFunc(int a1, int a2, int a3)
 
 #pragma region Vertical World Map Scrolling
 
-// this is inlined in A64
 // the proper function is WorldMap::Init that sets up the X axis boundaries
 // I think it should be called every time a world map is entered
-void hkWorldMapDoMovement(WorldMap* self, float fX, float fY, bool disableBoundaryChecks)
-{
-    if (!disableBoundaryChecks)
-    {
-        if (fX <= self->m_boundingRect.mX) {
-            fX = self->m_boundingRect.mX;
-        }
-
-        if (fX >= self->m_boundingRect.mX + self->m_boundingRect.mWidth) {
-            fX = self->m_boundingRect.mX + self->m_boundingRect.mWidth;
-        }
-
-        if (fY <= self->m_boundingRect.mY) {
-            fY = self->m_boundingRect.mY;
-        }
-
-        if (fY >= self->m_boundingRect.mY + self->m_boundingRect.mHeight) {
-            fY = self->m_boundingRect.mY + self->m_boundingRect.mHeight;
-        }
-    }
-
-    self->m_posX = fX;
-    self->m_posY = fY;
-}
 
 #pragma endregion
 
 #pragma region Board Zoom + GetBoard
 
-// todo: find 2 functions that calculate board zoom
-// maybe its in LawnApp vftable
-
 typedef int64_t (*mGetBoard)();
-mGetBoard oGetBoard = NULL;
+mGetBoard oGetBoard = nullptr;
 
 Board* hkGetBoard() {
     // just making this available for own use
@@ -173,26 +142,28 @@ Board* getBoard() {
     return hkGetBoard();
 }
 
+// todo: find 2 functions that calculate board zoom
+// maybe its in LawnApp vftable
+
+typedef void(*boardTest)(Board*, int*, int, int);
+boardTest oBoardTest = nullptr;
+
+void hkBoardTest(Board* self, int* a2, int a3, int a4)
+{
+    LOGI("hai: %d, %d", a3, a4);
+    oBoardTest(self, a2, a3, a4);
+}
+
 #pragma endregion
 
 #pragma region Build Symbol Funcs
 
 Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc PlantType::oPlantTypeBuildSymbols = nullptr;
+Reflection::CRefManualSymbolBuilder::ConstructFunc PlantType::oPlantTypeConstruct = nullptr;
 Reflection::CRefManualSymbolBuilder::BuildSymbolsFunc ZombieType::oZombieTypeBuildSymbols = nullptr;
+Reflection::CRefManualSymbolBuilder::ConstructFunc ZombieType::oZombieTypeConstruct = nullptr;
 
 #pragma endregion
-
-// hardcoded bull codename: 75667C
-
-// just a placeholder func
-typedef int(*mapp)(int);
-mapp oMap = NULL;
-
-int map(int a1)
-{
-    LOGI("now");
-    return oMap(a1);
-}
 
 __attribute__((constructor))
 // This is automatically executed when the lib is loaded
@@ -202,46 +173,24 @@ void libPVZ2ExpansionMod_main()
 	LOGI("Initializing %s", LIB_TAG);
 
     // Function hooks
-    
-#ifdef A32
-    // IntegerID backport
     PVZ2HookFunction(0x8D3150, (void*)hkPlantTypeCtor, (void**)&oPlantTypeCtor);
     PVZ2HookFunction(0xDA5C58, (void*)hkCreatePlantNameMapper, (void**)&oPlantNameMapperCtor);
     PVZ2HookFunction(0xCA5768, (void*)hkZombieTypeCtor, (void**)&oZombieTypeCtor);
     PVZ2HookFunction(0x10643E0, (void*)hkCreateZombieTypenameMap, (void**)&oZombieAlmanacCtor);
+
+    PVZ2HookFunction(0x8D3150, (void*)PlantType::construct, (void**)&PlantType::oPlantTypeConstruct);
     PVZ2HookFunction(0x8D1FE8, (void*)PlantType::buildSymbols, (void**)&PlantType::oPlantTypeBuildSymbols);
+    PVZ2HookFunction(0xCA5768, (void*)ZombieType::construct, (void**)&ZombieType::oZombieTypeConstruct);
     PVZ2HookFunction(0xCA5894, (void*)ZombieType::buildSymbols, (void**)&ZombieType::oZombieTypeBuildSymbols);
 
-    // Some general fixes
     PVZ2HookFunction(0x789DC8, (void*)hkCamelZombieFunc, nullptr);
     PVZ2HookFunction(0x949EFC, (void*)hkGetBoard, (void**)&oGetBoard);
-#else
-    PVZ2HookFunction(0xC6D080, (void*)hkPlantTypeCtor, (void**)&oPlantTypeCtor);
-    PVZ2HookFunction(0x11797B4, (void*)hkCreatePlantNameMapper, (void**)&oPlantNameMapperCtor);
-    PVZ2HookFunction(0x10680BC, (void*)hkZombieTypeCtor, (void**)&oZombieTypeCtor);
-    PVZ2HookFunction(0x14665C4, (void*)hkCreateZombieTypenameMap, (void**)&oZombieAlmanacCtor);
-    PVZ2HookFunction(0xC6BF48, (void*)PlantType::buildSymbols, (void**)&PlantType::oPlantTypeBuildSymbols);
-    PVZ2HookFunction(0x106828C, (void*)ZombieType::buildSymbols, (void**)&ZombieType::oZombieTypeBuildSymbols);
+    PVZ2HookFunction(0x724520, (void*)hkBoardTest, (void**)&oBoardTest);
 
-    PVZ2HookFunction(0xB18DC4, (void*)hkCamelZombieFunc, nullptr);
-    PVZ2HookFunction(0xCE4D8C, (void*)hkGetBoard, (void**)&oGetBoard);
-#endif
-
-    //PVZ2HookFunction(0x440E4C, (void*)hkWorldMapDoMovement, nullptr);
-    //PVZ2HookFunction(0x9EC540, (void*)hkWorldDataCtor, (void**)&oWorldDataCtor);
-    //PVZ2HookFunction(0x102C138, (void*)map, (void**)&oMap);
-
-    //PVZ2HookFunction(0x72C56C, (void*)hkBoardDraw, (void**)&oBoardDraw);
-
-    //Furr::OverrideSunCollectableModule::modInit();
-    //Furr::OverrideSunCollectableModuleProps::modInit();
-
-    // feature inits
     PowerLilyProps::modInit();
-    BoardPropertySheet::modInit();
+    ZombieEightiesArcadeProps::modInit();
 
     //ZombieCamel::modInit();
-    //ZombieEightiesArcadeProps::modInit();
 
     LOGI("Finished initializing");
 }

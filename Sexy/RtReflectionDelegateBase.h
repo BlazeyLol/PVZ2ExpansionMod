@@ -6,9 +6,9 @@ namespace Sexy
 {
 	class RtReflectionDelegateBase
 	{
-		Sexy::RtWeakPtr<int> ownerPtr;
-		SexyString eventName;
-		DelegateBase delegate;
-		int isDelegateSetup;
+		Sexy::RtWeakPtr<int> m_ownerPtr;
+		SexyString m_eventName;
+		DelegateBase m_delegate;
+		int m_isDelegateSetup;
 	};
 }
