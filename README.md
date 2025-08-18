@@ -13,7 +13,7 @@ An expanded library for PvZ2 (9.6.1), based on Brekko's ExampleMod. I want it to
 # Current Features
 * IntegerID backport! - Plant/Zombie types now support id mapping, which will help modders who dont want to constantly update the apk.
 * Power Lily softcode - Power Lily gained new properties regarding her collectable
-* Piano List softcode in packages
+* Arcade Pusher GI softcode
 * Mummy Memory from the original Example Mod
 
 # Future Plans
